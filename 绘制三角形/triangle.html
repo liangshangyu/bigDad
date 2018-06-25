@@ -1,0 +1,47 @@
+<!--最简单粗暴  使用图片、使用字符'\u25b3'、使用html 宽度叠加-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*方法一：使css*/
+        .triangle{
+            width:0;
+            height: 0;
+            border-left:50px solid transparent;
+            border-right:50px solid transparent;
+            border-bottom:100px solid red;
+        }
+        <!--方法四：clip path-->
+        .triangle{
+            width:100px;
+            height: 100px;
+            background-color: red;
+            clip-path: polygon(50% 0, 0 100%, 100% 100% );
+        }
+        /*方法二：字体图标*/
+    </style>
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+            integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+            crossorigin="anonymous"
+    />
+
+    <!--方法三：SVG画三角形-->
+
+</head>
+<body>
+ <div id="triangle" class="triangle"></div>
+ <i class="fas fa-caret-up"></i>
+
+ <svg width="100" height="100">
+     <polygon points="50,0 100,100 0,100" style="fill:red"></polygon>
+ </svg>
+</body>
+</html>
+<script>
+    /*方法五：canvas*/
+
+</script>

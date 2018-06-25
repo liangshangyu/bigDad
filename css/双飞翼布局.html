@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+    *{margin: 0;padding: 0;}
+    body{min-width: 700px;}
+    .header,
+    .footer{ 
+        border: 1px solid #333;
+        background: #aaa;
+        text-align: center;
+    }
+    .container{
+    	min-width: 700px;
+    }
+    .sub,
+    .main,
+    .extra{ 
+        float: left;
+        min-height: 130px;
+    }
+    .sub{
+        margin-left: -100%;
+        width: 200px;
+        background: red;
+    }
+    .extra{
+        margin-left: -220px;
+        width: 220px;
+        background: blue;
+    }
+    .main{ 
+        width: 100%;
+    }
+    .main-inner{ 
+        margin-left: 200px;
+        margin-right: 220px;
+        min-height: 130px;
+        background: green;
+        word-break: break-all;
+    }
+    .footer{ 
+        clear: both;
+    }
+</style>
+</head>
+<body>
+	<div class="header">
+	    <h4>header</h4>
+	</div>
+	<div class="container">
+	    <div class="main">
+		    <div class="main-inner">
+		        <h4>main</h4>
+		        <p>HHHHHHHHHHHHHHHHHHHHHH
+		        hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+		        HHHHHHHHHHHHHHHHHHHHHH
+		        hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+		        </p>
+		    </div>
+	    </div> 
+	    <div class="sub">
+		    <h4>sub</h4>
+		     <p>
+		     	oooooooooooooo
+		        0000000000000000
+		        00000000000000000
+		        ooooooooooooooo
+		        ooooooooooooooo
+		        000000000000000
+		    </p>
+	    </div>
+	    <div class="extra">
+		    <h4>extra</h4>
+		    <p>
+		    	BBBBBBBBBBBBBB
+		        888888888888888888
+		        BBBBBBBBBBBBBBBBBB
+		        88888888888888888888
+		    </p>
+	    </div>
+    </div>
+    <div class="footer">
+        <h4>footer</h4>
+    </div>
+    <div>
+    	相对于圣杯布局：
+    	<ul>
+    		<li>1:mian在最前面，依次是sub extra</li>
+    		<li>2：将main sub extra 都float:left</li>
+    		<li>3:main 占比 width:100%</li>
+    		<li>4:此时main沾满了，所以要把sub拉到最左边 extra拉到最右边</li>
+    		<li>5: 以上同圣杯布局一样， 除了使用padding解决main内容被覆盖的问题，还可以使用
+					margin。
+					给main 增加一个内层div 然后margin:0 220px 0 200px;
+    		</li>
+    	</ul>
+    </div>
+</body>
+</html>

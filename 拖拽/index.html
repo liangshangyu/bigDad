@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #target {
+            padding: 20px;
+            /*height: 300px;*/
+            border: 5px dashed #c0c0c0;
+            color: #e0e0e0;
+            font-size: 40px;
+            line-height: 260px;
+            text-align: center;
+            -webkit-user-select: none;
+            cursor: pointer;
+        }
+
+        /*给拖拽添加的时候提供更加人性化的样式*/
+        #target.actived {
+            border-color: #888;
+            color: #eaeaea;
+            box-shadow: 0 0 80px #e0e0e0 inset;
+        }
+
+        #result{
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        #result li{
+            border-top: 2px solid #c0c0c0;
+        }
+        #img2{
+            width: 400px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="page-header">
+        <h1>Drag&Drop</h1>
+    </div>
+
+    <input type="text">
+    <!-- 下面的内容只是拖拽的内容-->
+    <div class="jumbotron">
+        <p>你好啊，你今年几岁啊，哈哈，我的今天在哪里</p>
+        <!-- <img src="./images/googlelogo_color_272x92dp.png" alt="">
+        <img src="./images/詹姆斯1.jpg" alt="" id="img2"> -->
+        <img src="./proxy.png" alt="">
+    </div>
+
+    <!-- 这个div是拖拽到的目的地,文件,图片,或者文本会存放在ul中-->
+    <div id="target">
+        Drag something into here
+        <ul id="result" class="list-group">
+
+        </ul>
+    </div>
+    <br>
+</div>
+
+<script>
+
+    window.onload = function () {
+
+        //target  所有被拖拽的内容都是拖拽到target中
+        var target = document.getElementById('target');
+        //result  拖拽结果显示的区域
+        var result = document.getElementById('result');
+
+        //监听拖拽事件
+        //drag  拖拽
+        //drop  松开,放下
+        target.addEventListener('dragenter', function () {
+//            console.log('拖拽进入');
+            this.classList.add('actived');
+        });
+
+        target.addEventListener('dragleave', function () {
+//            console.log("拖拽离开");
+            this.classList.remove('actived');
+        });
+
+        //如果要监听drop事件,首先需要阻止默认的拖拽事件
+        target.addEventListener('dragover', function (e) {
+            e.preventDefault();
+        });
+        //监听拖拽松开的事件
+        target.addEventListener('drop', function (e) {
+//            console.log('松开放下');
+            //判断拖拽进来的是什么内容
+            // 1. 文本 text
+            // 2. 图片 src
+            // 3. 文件  file
+			
+           /* var file = e.dataTransfer.files.length;
+            var src = e.dataTransfer.getData('Text');
+            var text = e.dataTransfer.getData('text/plain');
+			console.log(e.dataTransfer);
+            if (file){
+                //拖拽来的是一个或者多个文件
+                var files = e.dataTransfer.files;
+                //遍历每一个文件
+                for (var i = 0; i < files.length; i++){
+                    var f = files[i];
+                    var li = document.createElement('li');
+                    li.innerHTML = "<h3>"+f.name+"</h3><p>"+f.size+"</p>";
+                    result.appendChild(li);
+                }
+            } else if(src){
+                var img = document.createElement('img');
+                //text/url-list 获取的是图片所对应的url地址
+                img.src = src;
+                var li = document.createElement('li');
+                li.appendChild(img);
+                result.appendChild(li);
+            }else if(text){
+                var li = document.createElement('li');
+                li.innerText = text;
+                result.appendChild(li);
+            }*/
+            e.preventDefault();
+			
+			//实现本地图片到浏览器
+			var list = e.dataTransfer.files;
+			for(var i = 0;i<list.length;i++){
+				var f = list[i];
+
+				var reader = new FileReader();
+				reader.readAsDataURL(f);
+				reader.onload = function() {
+					var img = new Image();
+					img.src = reader.result;
+					var li = document.createElement('li');
+	                li.appendChild(img);
+	                result.appendChild(li);
+				}
+			}
+        });
+    };
+</script>
+
+</body>
+</html>

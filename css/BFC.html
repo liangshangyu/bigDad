@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	.box{
+		background-color: green;
+		overflow: hidden;
+	}
+	.box div{
+		float: left;
+		background-color: lightgreen;
+		margin:10px;
+	}
+</style>
+<body>
+	<div>
+		什么是BFC?在一个页面的CSS渲染中，块级格式上下文（Block Formatting Context）是按照块级盒子布局的。W3C滴BFC定义如下：
+		浮动元素和绝对定位元素，非块级盒子的块级容器（例如inline-block,table-cells）,以及overflow值不为'visable'的块级盒子，都会为他们的内容创建新的BFC
+		也就是说满足一下任意一个或多个条件即可：
+		<ul>
+			<li>float值不为none</li>
+			<li>position的值不是static或者relative</li>
+			<li>display的值是inline-block table-cell flex 或者inline-flex</li>
+			<li>overflow不是visible</li>
+		</ul>
+	</div>
+	<div class="container">
+		设置container的overflow值为hidden 就看可以创建一BFC
+	</div>
+	<div>
+		在BFC中，块盒和行盒都会沿着其父元素的边框排列
+		在BFC中，盒子之间的边距由各自的外边距决定，但不是二者之和，该现象成为外边距合并
+		1、两个相邻的外边距都是正数时，折叠结果是它们两者之间较大的值。
+		2、两个相邻的外边距都是负数时，折叠结果是两者绝对值的较大值。
+		3、两个外边距一正一负时，折叠结果是两者的相加的和。
+	</div>
+
+	<div>
+		BFC可以用来做些什么？
+		<ul>
+			<li>
+				避免外边距合并的现象。相邻元素处于同一个BFC中才会引发，若相邻元素在不用的BFC中，就可以避免
+			</li>
+			<li>
+				浮动元素会脱离文档流。如果一个没有高度或者height:auto的容器中的子元素是浮动元素，则该容器的高度不会被撑开，通常利用伪元素解决。BFC能够包含浮动，也能解决这个问题。
+			</li>
+		</ul>
+	</div>
+	<div class="box">
+		<div>Sibling</div>
+		<div>Sibling</div>
+	</div>
+	<div class="container1" style="overflow: hidden;background-color: yellow">
+	    <div class="floated" style="float: left;height: 74px;text-align: center;line-height: 74px">
+	        Floated div
+	    </div>
+	    <p style="margin-left: 10px;">
+	        Quae hic ut ab perferendis sit quod architecto, 
+	        dolor debitis quam rem provident aspernatur tempora
+	        expedita.dsfsdfdsfdsfdsfsgg.gfdgdgtergtrgsaj;jkjpkkkjljljlkjfljsalfjldsjflsaff
+	        fdsfjslkajflsajfljdsafjsa
+	    </p>
+	</div>    
+</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>事件委托好处：1）提交性能 2）后续添加的元素同样能触发事件</div>
+	<div id="ul1">
+		<li>11</li>
+		<li>22</li>
+		<li>33</li>
+		<li>44</li>
+	</div>
+
+	<div>
+		使用父级ul做事件处理，由于事件冒泡原理，事件会冒泡到ul上， ul上绑定了函数处理事件。点击ul会触发 点击li也会触发。如果只要点击li
+		触发事件，就需要Event对象识别点击对象是谁。标准浏览器是event.target
+		IE是event.srcElement
+	</div>
+	<div>
+		如果需要点击不同li执行不同操作，也可以使用事件委托，根据ID来判断点击的是哪个li
+	</div>
+
+	<div id="box">
+		<input type="button" id="add" value="添加">
+		<input type="button" id="remove">
+		<input type="button" id="move">
+		<input type="button" id="select">
+	</div>
+
+	<div>
+		要实现移入li li变红，移出li li变白，然后点击按钮增加一个li
+	</div>
+	<input type="button" id="btn" value="添加">
+		<ul id="ul2">
+			<li>11</li>
+			<li>22</li>
+			<li>33</li>
+			<li>44</li>
+		</ul>
+</body>
+</html>
+<script>
+	//实现点击li 弹出123
+	window.onload = function(){
+		var oUl = document.getElementById('ul1');
+		var sLi = oUl.getElementByTagName('li');
+		for(var i =0;i< aLi.length;i++){
+			aLi[i].onclick = function() {
+				alert(123);
+			}
+		}
+	}
+
+	//运用事件委托
+	window.onload = function() {
+		var oUl = document.getElementById('ul1');
+		oUl.onclick = function() {
+			alert(123)
+		}
+	}
+
+	//只有当点击li是 才会触发函数
+	window.onload = function() {
+		var oUl = document.getElementById('ul1');
+		oUl.onclick = function(ev) {
+			var ev = ev || window.event;
+			var target = ev.target || ev.srcElement;
+			if(target.nodeName.toLowerCase() == 'li'){
+				alert(123);
+				alert(target.innerHTML);
+			}
+		}
+	}
+	//事件委托 实现点击不同li 执行不同操作
+	window.onload = function() {
+		var oBox = document.getElementById('box');
+		oBox.onclick = function(ev) {
+			var ev = ev || window.event;
+			var target = ev.target || ev.srcElement;
+			if(target.nodeName.toLowerCase == 'input'){
+				switch (target.id) {
+					case 'add':
+					alert('添加');
+					break;
+					case 'remove':
+						alert('删除');
+						break;
+					case 'move':
+						alert('移动');
+						break;
+					case 'select':
+						alert('选择');
+						break;	
+
+						
+				}
+			}
+		}
+	}
+
+	//实现移入 li变红 移出li变白
+	window.onload = function() {
+		var oBtn = document.getElementById('btn');
+		var oUl = document.getElementById('ul2');
+		var aLi = oUl.getElementByTagName('li');
+		var num = 4;
+
+		//事件委托 添加的子元素也有事件
+		oUl.onmouseover = function(ev) {
+			var ev = ev || window.event;
+			var target = ev.target || ev.srcElement;
+			if(target.nodeName.toLowerCase() == 'li'){
+				target.style.background = 'red'
+			}
+		}
+		 oUl.onmouseout = function(ev){
+                var ev = ev || window.event;
+                var target = ev.target || ev.srcElement;
+                if(target.nodeName.toLowerCase() == 'li'){
+                    target.style.background = "#fff";
+                }
+                
+            };
+            
+        //添加新节点
+        oBtn.onclick = function(){
+            num++;
+            var oLi = document.createElement('li');
+            oLi.innerHTML = 111*num;
+            oUl.appendChild(oLi);
+        };
+	}
+</script>

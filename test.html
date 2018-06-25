@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn">dianji</button>
+</body>
+</html>
+<script src="./js/jquery.min.js"></script>
+<script>
+$('#btn').on('click',function () {
+    window.location.href = 'https://www.baidu.com/'
+    console.log(777);
+    window.setTimeout(function () {
+        location.reload()
+    },0)
+    console.log(888);
+})
+</script>

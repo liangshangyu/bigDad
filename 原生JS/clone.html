@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>深浅拷贝</div>
+</body>
+</html>
+<script>
+    //浅拷贝：依然是通过引用指向同一快内存
+    function shallowClone(o) {
+        const obj = {}
+        for(let i in o) {
+            obj[i] = o[i]
+        }
+        return obj
+    }
+    const oldObj = {
+        a:1,
+        b:['e','f','g'],
+        c: {h:{i:2}}
+    }
+    const newObj = shallowClone(oldObj)
+    console.log(newObj);
+    console.log(oldObj.c.h === newObj.c.h)
+    //很显然
+
+
+    //深拷贝
+    //JSON.parse  将JSON字符串反序列化成JS对象,stringify 将JSON对象序列化成JSON字符串
+    //
+    const newObj2 = JSON.parse(JSON.stringify(oldObj))
+    //弊端 ： 无法解决对函数、 RegExp等特殊对象的拷贝  会抛弃对象的constructor，所有的构造函数会指向Object
+    //对象有循环引用 会报错
+
+    //实现深拷贝
+    //针对不同的对象
+    const isType = (obj,type) => {
+        if(typeof obj !== 'object') return false
+        const typeString = Object.prototype.toString.call(obj)
+        let flag;
+        switch (type) {
+            case 'Array':
+                flag = typeString === '[object Array]';
+                break;
+            case 'Date':
+                flag = typeString === '[object Date]';
+                break;
+            case 'RegExp':
+                flag = typeString === '[object RegExp]';
+                break
+            default:
+                flag = true
+        }
+        return flag
+    }
+
+    const getRegExp = re => {
+        var flags = '';
+        if(re.global) flags += 'g'
+        if(re.ignoreCase) flags += 'i'
+        if(re.multiline) flags += 'm'
+        return flags
+    }
+
+    /**
+    * deep clone
+     * @param {[type]} parent object 需要进行克隆的对象
+     * @return {[type]}
+    * */
+
+
+    const clone = parent => {
+        //维护两个循环引用的数组
+        const parents = []
+        const children = []
+        const _clone = parent => {
+            if (parent === null) return null
+            if (typeof parent !== 'object') return parent
+            let child, proto;
+             if (isType(parent,'Array')){
+                //数组做特殊处理
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }else if (isType(parent,'RegExp')) {
+                //ES5 的 source 属性 /abc/ig.source => 'abc'
+                 //es6 为正则提供了 flags 属性，会返回正则的修饰符 /abc/ig.flags => 'gi'
+                 child = new RegExp(parent.source, getRegExp(parent) /*parent.flags*/);
+                 //js中正则表达式的使用有两种用方法 一种是正则表达式对象 /adcv/g 有exec(str) 和 test(str) 方法，
+                 // 需要注意lastIndex 只有在带有全局 g 下才会有该属性
+                 //另一种是字符串对象
+                 if(parent.lastIndex) child.lastIndex = parent.lastIndex
+             }else if(isType(parent, 'Date')) {
+                 child = new Date(parent.getTime())
+             }else {
+                 //处理对象原型
+                 proto = Object.getPrototypeOf(parent)
+                 //利用   Object.create切断原型链
+                 child = Object.create(proto)
+             }
+
+             //处理循环引用
+            const index = parents.indexOf(parent)
+            if(index != -1){
+                 return children[index]
+            }
+            parents.push(parent)
+            children.push(child)
+            for (let i in parent) {
+                //
+                child[i] = _clone(parent[i])
+            }
+            return child
+        }
+        return _clone(parent)
+    }
+
+    function person(pname) {
+        this.name = pname
+    }
+    const Messi = new person('Messi');
+    function say() {
+        console.log('hi')
+    }
+    const oldObjforDep = {
+        a:say,
+        c:new RegExp('ab+c','i'),
+        d:Messi
+    }
+    const newObjDep = clone(oldObjforDep)
+    console.log(newObjDep.a,oldObjforDep.a)
+    console.log(newObjDep.c,oldObjforDep.c)
+</script>

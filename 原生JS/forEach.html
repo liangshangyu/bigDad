@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //应用在对象的拷贝
+     function copy(obj) {
+         //Object 创建一个新对象 Object.create(proto, [propertiesObject])
+
+         //getPrototypeOf() 返回指定对象的原型 返回给定对象的原型
+         const copy = Object.create(Object.getPrototypeOf(obj))
+         console.log(copy);
+
+         // getOwnPropertyNames 返回一个由指定对象的所有自身属性的属性名（包括不可枚举属性）组成的数组
+         //['0','1','2','length']
+         const propNames = Object.getOwnPropertyNames(obj)
+
+         //getOwnPropertyDescriptor 返回一个对象的所有自身属性的描述符
+         //   {value:1, configurable:true, enumerable:true, writable:true}
+         propNames.forEach(function (name) {
+             //第一次a  第二次b
+             console.log(name);
+
+             const desc = Object.getOwnPropertyDescriptor(obj,name)
+             console.log(desc);
+
+             //在一个对象上定义一个新属性或者一个对象现有属性 返回这个对象
+             // Object.definePrototype(obj, prop, descriptor)
+             Object.defineProperty(copy,name,desc)
+         })
+         return copy
+     }
+
+     //兼容处理
+    if(!Array.prototype.forEach){
+         Array.prototype.forEach = function (callback) {
+             var T, k;
+             if (this == null ){
+                 throw new TypeError('this is not defined')
+             }
+
+             var O = Object(this)
+             var len = O.length >>> 0
+
+             if (typeof  callback !== 'function') {
+                 throw new TypeError(callback + 'is not a function')
+             }
+
+             if (arguments.length > 1){
+                 T = arguments[1]
+             }
+             k = 0;
+            while (k < len){
+                if( k in O){
+                    var kVlaue = O[k]
+                    callback.call(T, kVlaue, k, O)
+                }
+                k++
+            }
+         }
+     }
+</script>

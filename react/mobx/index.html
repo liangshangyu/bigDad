@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="container"></div>
+    <button id="btn">Increment</button>
+</body>
+</html>
+<script src="https://unpkg.com/mobx/lib/mobx.umd.js"></script>
+<script>
+    import {} from 'mobx'
+    var store = mobx.observable({
+        counter:0
+    })
+    function render(state) {
+        documengt.getElementById('container').textContent = state.counter
+    }
+    document.getElementById('btn').addEventListener('click',function () {
+        store.counter += 1;
+    })
+    mobx.observe(store, function () {
+        render(store)
+    })
+</script>

@@ -1,0 +1,73 @@
+/*一： less可以定义变量*/
+@background-color: #ffff;
+@text-color: #1A237E;
+
+p{
+  background-color: @background-color;
+  color: @text-color;
+  padding: 15px;
+}
+
+/**
+二： Mixins  将已有的class和 id 的样式应用到另一个不同的选择器上
+     Minxin支持传入参数
+*/
+#circle{
+  background-color: #4CA;
+  border-radius: 100%;
+}
+#small-circle{
+  width:50px;
+  height:50px;
+  #circle
+}
+#circle(@size:25px) {
+  background-color: #4CA;
+  border-radius: 100%;
+
+  width:@size;
+  height:@size
+}
+#smell-circle{
+  #circle
+}
+#bigCircle{
+  #circle(100px)
+}
+
+/*四： 嵌套，可以用于与页面的HTML结构相匹配的方式构造样式表 同时减少冲突的机会*/
+ul{
+  background-color: #0033AA;
+  padding: 10px;
+  list-style: none;
+
+  li{
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 10px 0;
+  }
+}
+/*五： less中的变量像其他高级语言一样 会向上查找*/
+@text-color:#0000;
+ul{
+  @text-color:#fff;
+  background-color: yellow;
+  list-style: none;
+
+  li{
+    color:@text-color;   //li标签将会有白色的文本
+    margin: 0 auto;
+  }
+}
+
+/*六： Less函数*/
+@var: #004590;
+div{
+  height: 50px;
+  width: 50px;
+  background-color: @var;
+
+  &:hover{
+    background-color: fadeout(@var, 50%);  //=>编译之后 background-color:rgba(0,69,144, 0.5)
+  }
+}

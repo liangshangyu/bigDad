@@ -1,0 +1,42 @@
+<div>
+	<p>在CSS中创建动画，可以使用@keyframes规则；在@keyframes中规定某项css样式，就能创建由当前样式逐渐改为新样式的动画效果。
+	</p>
+	<p>
+		IE10 FireFox以及Opera支持@keyframes规则和animation属性。Chrome和Safari 需要前缀-webkit-
+	</p>
+</div>
+<div class="myfirst">
+	当在 @keyframes 中创建动画时，需要把它捆绑到某个选择器上，
+	至少规定两个CSS3动画属性：1） 规定动画名称 2） 规定动画时长
+</div>
+<style>
+	.myfirst{
+		width:200px;
+		height:200px;
+		background: blue;
+		animation:myfirst 5s;
+		-moz-animation: myfirst 5s;	/* Firefox */
+		-webkit-animation: myfirst 5s;	/* Safari 和 Chrome */
+		-o-animation: myfirst 5s;	/* Opera */
+	}
+	@keyframes myfirst{
+		from {background: red}
+		to {background: yellow}
+	}
+ 
+	@-moz-keyframes myfirst {  /*FirFox*/
+		from {background: red}
+		to {background: yellow}
+	}
+	@-webkit-keyframes myfirst /*Safari 和 Chrome*/
+	{
+		from {background: red;}
+		to {background: yellow;}
+	}
+
+	@-o-keyframes myfirst  /*Opera*/
+	{
+		from {background: red;}
+		to {background: yellow;}
+	}
+</style>		

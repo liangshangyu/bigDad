@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Document</title>
+</head>
+<body>
+	<div id="container">
+		<input type="button" id="btn" class="input1" value="button"/>
+	</div>
+</body>
+</html>
+<script>
+	{/*parentId 容器id 
+	   selector 容器内元素的选择器 支持id className
+	   fn       要执行的函数	
+	*/}
+	function delegate(parentId, eventType, selector, fn){
+	if(typeof parentId === 'string') {
+		var parentId = document.getElementById(parentId);
+		!parentId && alert('parentId not found')
+	}
+	if(typeof selector !== 'string'){
+		alert('selector is not string')
+	}
+	if(typeof fn !== 'function'){
+		alert('fn is not a function')
+	}
+
+	function handle(e) {
+		var ev = window.event ? window.event : e;
+		var target = ev.target || ev.srcElement;
+
+		var currentTarget = e ? e.currentTarget : this;
+
+		if(target.id === selector || target.className.indexOf(selector) != -1){
+			fn.call(target);
+		}
+	}
+	parentId[eventType] = handle; //为事件添加监听函数
+}
+
+
+delegate('container', 'onclick','input1',function() {
+	alert(123);
+})
+</script>

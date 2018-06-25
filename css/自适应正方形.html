@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	.div1{
+		width:30%;  
+	    height:30vw;  
+	    background:red; 
+	}
+	.div2{
+		width: 30%;
+		height:0;
+		padding-bottom: 30%;
+		background-color: skyblue;
+	}
+	#square{
+		width:30%;
+		background-color: yellow;
+		overflow: hidden;;
+		max-width: 200px;
+		float: right;
+	}
+	#square:after{
+		content:'';
+		display: block;
+		margin-top: 100%;
+	}
+</style>
+<body>
+	<div class="div1">
+		CSS3 中新增了一组相对于可视区域百分比的长度单位vw、vh、vmin、vmax。其中vw是相对于视口宽度百分比的单位，1vw = 1% viewport width，vh是相对于视口高度百分比的单位，1vh = 1% viewport height；vmin是相对当前视口宽高中较小的一个的百分比单位，同理 vmax是相对当前视口宽高中较大的一个的百分比单位。
+	</div>
+	<div class="div2">
+		设置垂直方向的padding撑开容器；由于margin、padding的百分比数值是相对于氟元素的宽度计算的，只需将元素垂直方向的一个padding设置为与width相同的百分比就乐意了
+	</div>
+	<div id="square">
+		<img src="" alt="">
+	</div>
+</body>
+</html>
