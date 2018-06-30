@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device - width, initial-scale = 2.0,maximum-scale =2.0,minimum-scale=2.0, user-scalable=no"
+    >
+    <title>Title</title>
+    <style>
+        body,html{
+            font-size: 13.33333vw; //100px
+        }
+        div{
+            width:1rem;
+            /*width:100px*/
+        }
+    </style>
+</head>
+<body>
+    <div>根据css3规范，视口单位主要包括以下4个</div>
+    <ul>
+        <li>vw:1vw等于视口宽度的1%</li>
+        <li>vh:1vh等于视口高度的1%</li>
+        <li>vmin:选取vw和vh中最小的那个</li>
+        <li>vmax:选取vw和vh中最大的那个</li>
+    </ul>
+    <p>用视口单位度量，视口宽度为100vw,高度为100vh</p>
+    <p>例如，在桌面端浏览器视口尺寸为650px，那么1vw = 650* 1% = 6.5px（这是理论，如果不支持0.5px，那么实际结果可能是7px）</p>
+    <p>然鹅，通过采用rem单位的动态计算的弹性布局，则是需要在头部内嵌一段脚本来进行监听
+        分辨率的变化，来动态改变根元素字体大小，使得css于js耦合在一起
+    </p>
+    <p>通过利用视口单位实现适配的页面，既解决响应式断层问题，又能解决脚本依赖的问题</p>
+    <h2>用法以iPhone6为基准（750）</h2>
+    <ul>
+        <li>一般第一步，对移动端进行meta标签设置</li>
+        <li>第二步，设置body/html的font-size,100/750 = 0.1333333333vw,我们把这个视口当作100px
+            1px= 0.1333333vw
+        </li>
+
+
+
+    </ul>
+
+
+</body>
+
+</html>
