@@ -2,11 +2,12 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/原生JS/filter.js" line="13" />
+    <bookmark url="file://$PROJECT_DIR$/vue和react对比.md" line="45" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab9e0f4a-1c35-4476-9fcd-ac461610161a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/keep-alive/index.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue/vue变化侦测原理.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue和react对比.md" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/react/react-mobx-demo" afterPath="$PROJECT_DIR$/react/react-mobx-demo" />
     </list>
@@ -22,28 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="forEach.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/原生JS/Array_/forEach.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/原生JS/Array_/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#44#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="柯里化.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/原生JS/柯里化.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -109,12 +88,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/keep-alive/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-97">
-              <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+            <state relative-caret-position="2736">
+              <caret line="76" column="1" lean-forward="false" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vue和react对比.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue和react对比.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vue变化侦测原理.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vue/vue变化侦测原理.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="103">
+                <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+                <folding>
+                  <marker date="1532877541049" expanded="true" signature="150:407" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="185:404" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="256:284" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="313:400" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="341:371" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="498:562" ph="&lt;template/&gt;" />
+                  <marker date="1532877541049" expanded="true" signature="513:550" ph="&lt;div/&gt;" />
+                  <marker date="1532877541049" expanded="true" signature="814:1207" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="866:1204" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="937:1002" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="1031:1200" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="1059:1089" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="1129:1171" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="1335:1855" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="1432:1486" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="1513:1548" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="1575:1613" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="1627:1704" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="1651:1698" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="1718:1853" ph="{...}" />
+                  <marker date="1532877541049" expanded="true" signature="1807:1847" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -124,7 +148,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="288">
-                <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+                <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
                 <folding>
                   <marker date="1530974352368" expanded="true" signature="59:67" ph="{...}" />
                   <marker date="1530974352368" expanded="true" signature="110:138" ph="{...}" />
@@ -163,8 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SSR/webpack.config.js" />
-        <option value="$PROJECT_DIR$/SSR/build/webpack.config.base.js" />
         <option value="$PROJECT_DIR$/SSR/build/webpack.config.client.js" />
         <option value="$PROJECT_DIR$/SSR/config/prod.env.js" />
         <option value="$PROJECT_DIR$/SSR/config/dev.env.js" />
@@ -214,6 +236,8 @@
         <option value="$PROJECT_DIR$/keep-alive/index.vue" />
         <option value="$PROJECT_DIR$/vue/程序化的事件监听器.md" />
         <option value="$PROJECT_DIR$/keep-alive/index.js" />
+        <option value="$PROJECT_DIR$/vue和react对比.md" />
+        <option value="$PROJECT_DIR$/vue/vue变化侦测原理.md" />
       </list>
     </option>
   </component>
@@ -236,8 +260,8 @@
     <handled-path value="$PROJECT_DIR$/移动端/vw-layout/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="566" />
-    <option name="y" value="130" />
+    <option name="x" value="261" />
+    <option name="y" value="50" />
     <option name="width" value="1391" />
     <option name="height" value="895" />
   </component>
@@ -256,8 +280,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,7 +292,7 @@
             <path>
               <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
               <item name="bigDad" type="462c0819:PsiDirectoryNode" />
-              <item name="keep-alive" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -416,18 +440,18 @@
       <workItem from="1529895925549" duration="5578000" />
       <workItem from="1530347589779" duration="1342000" />
       <workItem from="1530963860480" duration="4859000" />
-      <workItem from="1532855064460" duration="24000" />
+      <workItem from="1532855064460" duration="215000" />
+      <workItem from="1532855313999" duration="7626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183158000" />
+    <option name="totallyTimeSpent" value="190975000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="566" y="130" width="1391" height="895" extended-state="0" />
-    <editor active="true" />
+    <frame x="261" y="50" width="1391" height="895" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17738359" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.033259425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -459,20 +483,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SSR/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodeSpider/fundSpider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6325">
-          <caret line="255" column="32" lean-forward="false" selection-start-line="255" selection-start-column="32" selection-end-line="255" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/awsomeBtn.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
@@ -744,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -818,11 +827,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/keep-alive/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2736">
+          <caret line="76" column="1" lean-forward="false" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vue/程序化的事件监听器.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="288">
-            <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             <folding>
               <marker date="1530974352368" expanded="true" signature="59:67" ph="{...}" />
               <marker date="1530974352368" expanded="true" signature="110:138" ph="{...}" />
@@ -832,11 +849,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/keep-alive/index.js">
+    <entry file="file://$PROJECT_DIR$/vue和react对比.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-97">
-          <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+        <state relative-caret-position="503">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/vue变化侦测原理.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="103">
+            <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+            <folding>
+              <marker date="1532877541049" expanded="true" signature="150:407" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="185:404" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="256:284" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="313:400" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="341:371" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="498:562" ph="&lt;template/&gt;" />
+              <marker date="1532877541049" expanded="true" signature="513:550" ph="&lt;div/&gt;" />
+              <marker date="1532877541049" expanded="true" signature="814:1207" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="866:1204" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="937:1002" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="1031:1200" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="1059:1089" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="1129:1171" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="1335:1855" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="1432:1486" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="1513:1548" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="1575:1613" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="1627:1704" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="1651:1698" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="1718:1853" ph="{...}" />
+              <marker date="1532877541049" expanded="true" signature="1807:1847" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
