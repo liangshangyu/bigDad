@@ -6,10 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab9e0f4a-1c35-4476-9fcd-ac461610161a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue/vue变化侦测原理.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue和react对比.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/绘制三角形/rotate.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/react/react-mobx-demo" afterPath="$PROJECT_DIR$/react/react-mobx-demo" />
+      <change beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,28 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="柯里化.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/原生JS/柯里化.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1944">
-              <caret line="55" column="39" lean-forward="false" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="基础.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/原生JS/Array_/基础.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="context.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react/context.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -101,14 +79,14 @@
       <file leaf-file-name="vue和react对比.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue和react对比.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
+            <state relative-caret-position="2088">
               <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vue变化侦测原理.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vue变化侦测原理.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/vue变化侦测原理.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -143,6 +121,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rotate.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/绘制三角形/rotate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="程序化的事件监听器.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/程序化的事件监听器.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -165,9 +163,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="vue" />
-        <option value="HTML File" />
         <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -187,8 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SSR/build/webpack.config.client.js" />
-        <option value="$PROJECT_DIR$/SSR/config/prod.env.js" />
         <option value="$PROJECT_DIR$/SSR/config/dev.env.js" />
         <option value="$PROJECT_DIR$/SSR/client/server-entry.js" />
         <option value="$PROJECT_DIR$/SSR/build/webpack.config.server.js" />
@@ -238,6 +234,8 @@
         <option value="$PROJECT_DIR$/keep-alive/index.js" />
         <option value="$PROJECT_DIR$/vue和react对比.md" />
         <option value="$PROJECT_DIR$/vue/vue变化侦测原理.md" />
+        <option value="$PROJECT_DIR$/绘制三角形/rotate.html" />
+        <option value="$PROJECT_DIR$/test.html" />
       </list>
     </option>
   </component>
@@ -259,10 +257,10 @@
     <handled-path value="$PROJECT_DIR$/react/react-mobx-demo/node_modules" />
     <handled-path value="$PROJECT_DIR$/移动端/vw-layout/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="261" />
-    <option name="y" value="50" />
-    <option name="width" value="1391" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="120" />
+    <option name="y" value="56" />
+    <option name="width" value="1573" />
     <option name="height" value="895" />
   </component>
   <component name="ProjectView">
@@ -293,6 +291,11 @@
               <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
               <item name="bigDad" type="462c0819:PsiDirectoryNode" />
               <item name="vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bigDad" type="462c0819:PsiDirectoryNode" />
+              <item name="绘制三角形" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -442,16 +445,18 @@
       <workItem from="1530963860480" duration="4859000" />
       <workItem from="1532855064460" duration="215000" />
       <workItem from="1532855313999" duration="7626000" />
+      <workItem from="1533126978516" duration="2009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190975000" />
+    <option name="totallyTimeSpent" value="192984000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="261" y="50" width="1391" height="895" extended-state="0" />
+    <frame x="120" y="56" width="1573" height="895" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.033259425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -483,20 +488,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/awsomeBtn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webPack4/optimize/.babelre">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webPack4/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -761,9 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -772,7 +760,7 @@
         <state relative-caret-position="1944">
           <caret line="55" column="39" lean-forward="false" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -851,7 +839,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue和react对比.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
+        <state relative-caret-position="2088">
           <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
@@ -887,6 +875,22 @@
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/绘制三角形/rotate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

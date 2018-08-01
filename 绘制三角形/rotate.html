@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+    <style>
+        .triangle {
+            width:0;
+            height:0;
+            overflow:hidden;
+            /*朝下的三角形*/
+            border-left:6px solid transparent;
+            border-right:6px solid transparent;
+            border-top:6px solid #118a11;
+        }
+        .triangle:hover {
+            -ms-transform:rotate(80deg); 	/* IE 9 */
+            -moz-transform:rotate(80deg); 	/* Firefox */
+            -webkit-transform:rotate(80deg); /* Safari 和 Chrome */
+            -o-transform:rotate(80deg); 	/* Opera */
+            transform:rotate(80deg);
+
+            -webkit-transition: -webkit-transform 0.2s ease-in; /* Safari 和 Chrome */
+            -moz-transition:-moz-transform 0.2s ease-in; 	/* Firefox */
+            -o-transition:-o-transform 0.2s ease-in; 	/* Opera */
+            transition:transform 0.2s ease-in;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="triangle">
+</div>
+</body>
+</html>

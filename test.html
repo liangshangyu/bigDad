@@ -3,13 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .test{
+            width: 260px;
+            height: 160px;
+            background-color: #8a6d3b;
+            position: relative;
+        }
+        .eafter{
+            width: 0;
+            height: 0;
+            border-top: 30px solid red;
+            border-left: 30px solid transparent;
+            position: absolute;
+            right: 0;
+        }
+        a{
+            display: inline-block;
+            width: 6px;
+            height:3px;
+            background: white;
+            line-height: 0;font-size:0;
+            vertical-align: middle;-webkit-transform: rotate(45deg);
+            position: absolute;
+            right: 8px;
+            top: 10px;
+        }
+        a:after{
+            content:'/';
+            display:block;
+            width: 12px;
+            height:3px;
+            background: white;
+            -webkit-transform: rotate(-90deg) translateY(-50%) translateX(50%);}
+    </style>
 </head>
 <body>
-<button id="btn">dianji</button>
+<div class="test">
+    <i class="eafter"></i>
+    <a href="">VVVVVV</a>
+</div>
+
+<!--<button id="btn">dianji</button>-->
 </body>
 </html>
 <script src="./js/jquery.min.js"></script>
 <script>
+    $('.test').on('click',function () {
+        $(this).css('border','1px solid blue')
+    })
 $('#btn').on('click',function () {
     window.location.href = 'https://www.baidu.com/'
     console.log(777);
