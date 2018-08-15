@@ -6,10 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab9e0f4a-1c35-4476-9fcd-ac461610161a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue/api.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue/http.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/react/react-mobx-demo" afterPath="$PROJECT_DIR$/react/react-mobx-demo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/杂项/getMaxSumChildArr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,49 +19,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/双向绑定/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2196">
+            <state relative-caret-position="0">
               <caret line="61" column="39" lean-forward="false" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vue变化侦测原理.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/vue变化侦测原理.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2268">
-                <caret line="63" column="20" lean-forward="false" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
-                <folding>
-                  <marker date="1532877541049" expanded="true" signature="150:407" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="185:404" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="256:284" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="313:400" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="341:371" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="498:562" ph="&lt;template/&gt;" />
-                  <marker date="1532877541049" expanded="true" signature="513:550" ph="&lt;div/&gt;" />
-                  <marker date="1532877541049" expanded="true" signature="814:1207" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="866:1204" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="937:1002" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="1031:1200" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="1059:1089" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="1129:1171" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="1335:1855" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="1432:1486" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="1513:1548" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="1575:1613" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="1627:1704" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="1651:1698" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="1718:1853" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="1807:1847" ph="{...}" />
-                </folding>
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -71,7 +35,7 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
+            <state relative-caret-position="0">
               <caret line="26" column="68" lean-forward="false" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
               <folding />
             </state>
@@ -81,7 +45,7 @@
       <file leaf-file-name="utils.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2999">
+            <state relative-caret-position="0">
               <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -91,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="http.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="http.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/http.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="0">
+              <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#40#65#0" expanded="true" />
@@ -104,11 +68,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="getMaxSumChildArr.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/杂项/getMaxSumChildArr.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="70" column="29" lean-forward="true" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+              <folding>
+                <element signature="e#178#212#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="0">
+              <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -129,7 +105,7 @@
       <file leaf-file-name="aboutThis.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/原生JS/this指向/aboutThis.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2628">
+            <state relative-caret-position="0">
               <caret line="73" column="17" lean-forward="false" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
               <folding>
                 <element signature="n#!!block;n#Fun#0" expanded="false" />
@@ -141,7 +117,7 @@
       <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/原生JS/this指向/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
+            <state relative-caret-position="0">
               <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
               <folding />
             </state>
@@ -150,16 +126,10 @@
       </file>
       <file leaf-file-name="程序化的事件监听器.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/程序化的事件监听器.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="288">
-                <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-                <folding>
-                  <marker date="1530974352368" expanded="true" signature="59:67" ph="{...}" />
-                  <marker date="1530974352368" expanded="true" signature="110:138" ph="{...}" />
-                </folding>
-              </first_editor>
-              <second_editor />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -192,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/awsomeBtn.html" />
         <option value="$PROJECT_DIR$/webPack4/package.json" />
         <option value="$PROJECT_DIR$/webPack4/optimize/.babelre" />
         <option value="$PROJECT_DIR$/webPack4/optimize/src/utils.js" />
@@ -243,6 +212,7 @@
         <option value="$PROJECT_DIR$/原生JS/this指向/test.js" />
         <option value="$PROJECT_DIR$/vue/api.js" />
         <option value="$PROJECT_DIR$/vue/http.js" />
+        <option value="$PROJECT_DIR$/杂项/getMaxSumChildArr.js" />
       </list>
     </option>
   </component>
@@ -258,17 +228,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/js/election/node_modules" />
-    <handled-path value="$PROJECT_DIR$/react/dapp/node_modules" />
-    <handled-path value="$PROJECT_DIR$/react/react-mobx-demo/node_modules" />
-    <handled-path value="$PROJECT_DIR$/移动端/vw-layout/node_modules" />
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="296" />
-    <option name="y" value="94" />
-    <option name="width" value="1573" />
-    <option name="height" value="895" />
+    <option name="x" value="306" />
+    <option name="y" value="27" />
+    <option name="width" value="1300" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -286,37 +250,39 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bigDad" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bigDad" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bigDad" type="462c0819:PsiDirectoryNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bigDad" type="462c0819:PsiDirectoryNode" />
-              <item name="杂项" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigDad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigDad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigDad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigDad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="杂项" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -341,15 +307,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.test.js">
-    <configuration name="Object.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="Object.js" working-dir="$PROJECT_DIR$/原生JS/Object_" />
-    <configuration name="基础.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="基础.js" working-dir="$PROJECT_DIR$/原生JS/String" />
-    <configuration default="false" name="柯里化.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="柯里化.js" working-dir="$PROJECT_DIR$/原生JS">
+  <component name="RunManager" selected="Node.js.getMaxSumChildArr.js">
+    <configuration default="false" name="基础.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="基础.js" working-dir="$PROJECT_DIR$/原生JS/String">
       <method />
     </configuration>
-    <configuration name="aboutThis.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="aboutThis.js" working-dir="$PROJECT_DIR$/原生JS/this指向" />
-    <configuration name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/原生JS/this指向" />
-    <configuration name="utils.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="utils.js" working-dir="$PROJECT_DIR$/utils" />
+    <configuration default="false" name="utils.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="utils.js" working-dir="$PROJECT_DIR$/utils">
+      <method />
+    </configuration>
+    <configuration default="false" name="aboutThis.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="aboutThis.js" working-dir="$PROJECT_DIR$/原生JS/this指向">
+      <method />
+    </configuration>
+    <configuration default="false" name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/原生JS/this指向">
+      <method />
+    </configuration>
+    <configuration default="false" name="getMaxSumChildArr.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="getMaxSumChildArr.js" working-dir="$PROJECT_DIR$/杂项">
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -387,6 +360,15 @@
       <option name="filePath" />
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -407,28 +389,20 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.Object.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.基础.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.utils.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.aboutThis.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.test.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.基础.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.utils.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.aboutThis.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.test.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.getMaxSumChildArr.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.test.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.aboutThis.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.utils.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.基础.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.Object.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.getMaxSumChildArr.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.test.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.aboutThis.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.utils.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.基础.js" />
       </list>
     </recent_temporary>
   </component>
@@ -465,21 +439,21 @@
       <workItem from="1533468213678" duration="5792000" />
       <workItem from="1533564721055" duration="1204000" />
       <workItem from="1533735648054" duration="5704000" />
+      <workItem from="1534324784987" duration="2918000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211695000" />
+    <option name="totallyTimeSpent" value="214613000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="296" y="94" width="1573" height="895" extended-state="0" />
+    <frame x="306" y="27" width="1300" height="877" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.048859935" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0911252" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27667984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27553764" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43610013" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -489,30 +463,24 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webPack4/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webPack4/optimize/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2375">
@@ -749,16 +717,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -781,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2736">
           <caret line="76" column="1" lean-forward="false" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,68 +754,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/vue变化侦测原理.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2268">
-            <caret line="63" column="20" lean-forward="false" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
-            <folding>
-              <marker date="1532877541049" expanded="true" signature="150:407" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="185:404" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="256:284" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="313:400" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="341:371" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="498:562" ph="&lt;template/&gt;" />
-              <marker date="1532877541049" expanded="true" signature="513:550" ph="&lt;div/&gt;" />
-              <marker date="1532877541049" expanded="true" signature="814:1207" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="866:1204" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="937:1002" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="1031:1200" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="1059:1089" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="1129:1171" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="1335:1855" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="1432:1486" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="1513:1548" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="1575:1613" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="1627:1704" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="1651:1698" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="1718:1853" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="1807:1847" ph="{...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
+        <state relative-caret-position="0">
           <caret line="26" column="68" lean-forward="false" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/程序化的事件监听器.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="288">
-            <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-            <folding>
-              <marker date="1530974352368" expanded="true" signature="59:67" ph="{...}" />
-              <marker date="1530974352368" expanded="true" signature="110:138" ph="{...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/双向绑定/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2196">
+        <state relative-caret-position="0">
           <caret line="61" column="39" lean-forward="false" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
           <folding />
         </state>
@@ -866,7 +791,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/原生JS/this指向/aboutThis.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2628">
+        <state relative-caret-position="0">
           <caret line="73" column="17" lean-forward="false" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
           <folding>
             <element signature="n#!!block;n#Fun#0" expanded="false" />
@@ -876,7 +801,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/原生JS/this指向/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
+        <state relative-caret-position="0">
           <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding />
         </state>
@@ -894,7 +819,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2999">
+        <state relative-caret-position="0">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -905,19 +830,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/http.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#40#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/杂项/getMaxSumChildArr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="70" column="29" lean-forward="true" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+          <folding>
+            <element signature="e#178#212#0" expanded="false" />
           </folding>
         </state>
       </provider>
