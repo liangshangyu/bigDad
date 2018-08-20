@@ -1,0 +1,107 @@
+ScrollView使用：
+	必须有一个确定的高度才能正常工作
+	初始化的两种方式：
+	 1：
+
+0：TextInput 控件，控制输入
+		属性： autoCapitalize:是否自动转换字符大写 none  sentences(每个句子的瘦子米大写)
+							   words(每个单词的首字母大写)
+							   characters（每个字母都变大写）
+			autoCorrect（默认开启自动修正）
+			aotoFocus(默认关闭)  defaultValue()
+			keyboard(type)键盘类型 可选 default email-address numeric phone-pad ascii-capable
+				default、numeric、eamil-address 可通用
+			maxLength(number)
+			multiline(bool)
+			placeholder 
+
+
+底部导航Tan的绘制
+
+1： 第三方插件形式 react-native-tab-navigator
+
+	import TabNavigator from ''
+	
+	<TabNavigator>
+		<TabNvigator.Item
+			selected={this.state.selectedTab === 'popular'}
+			title='最新'
+			selectedTitleStyle={{color: ''}}
+			renderIcon={()=> <Image style={} source={require('')}/>}\
+			renderSelectedIcon={ () => 
+				<Image style={[]}
+			}
+			omPress= { ()=> this.setState({selectedTab: 'popular'})}
+		>
+			<PopularPage/>  //选项卡对应的页面
+		</TabNavigator.Item>
+	</TabNavigator>
+
+2: 最新react-navigation导航组件
+	主要构成：StackNavigator  TabNavigator  DrawerNavigator 
+
+2.1 react-native-navigation  
+2.2 对于IOS 可以直接使用 TabBarIOS 
+
+
+3: 轮播图 react-native-swiper
+
+	属性：height autoplay horizontal loop index showButtons onIndecChanged 
+		
+	import Swiper from ''
+	
+	<View style={}>
+		<Swiper style={} height={} horizontal={} autoplay >
+			<View style={} >
+				<Text style={}>Hello World </Text>
+			</View>
+			<View style={} >
+				<Text style={}>Hello Lsy</Text>
+			</View>
+				
+		<Swiper/>
+	</View>
+
+
+
+4: 获取本地相册的方法
+	第三方插件 react-native-image-picker  针对Android和IOS别分配置
+	react-native自带的CameraRoll 
+
+
+
+5:  react-native 网络请求  RN内置fetch。
+
+6： react-native 获取网络状态使用 NetInfo.fetch().done()
+		 针对Android和IOS有不同的表示网络状态的代码
+		 常用属性或方法：pop(回到上一个) jump（Tabs专用）push（跳转到新页面） popTo（返回指定页面）
+
+7: react-native-router-flux (也可用来写底部Tabs)
+	Router
+	Scene
+
+	Action：为应用程序提供导航。
+
+8: react-nativ-drawer
+
+9：NavigationBar react-native内置的 import {NavigationBar} from 'react-native'
+
+10: SegmentedView
+
+
+11:以iphone6为例
+	对角线：4.7英寸
+	逻辑分辨率：375 * 667
+	设备分辨率：750 * 1334
+	设备像素比：2  理论上越大越清晰
+	
+	设备    尺寸    屏幕大小（点）   分辨率（像素）  PPI  像素比  宽高比
+
+	iPhone6 4.7	375 * 667	750 1334		326	2
+	6s      5.5	414 * 736	1080 1920		401	3
+
+
+
+
+
+
