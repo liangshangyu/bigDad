@@ -1,0 +1,22 @@
+1： 错误描述 'run-android' unrecognized
+    解决方案：yarn add react-native-cli
+
+2:  错误描述:Execution failed for task':app:progressDebugResources.'>java.io.IOException:Could not delete folder
+    解决方案：cd android && gradlew clean
+	      cd .. && react-native run-android	
+
+3：错误描述：undefined is not an object(evaluating '_react2.PropTypes.String')
+	     <unknow> E:\.....\react-native-navigation-bar\index.js
+             这个地方的 PropTypes 引用错
+	   
+   解决方案：import PropTypes from 'prop-types'  替换原来的PropTypes
+  
+4：错误描述：Invariant Violation:Element type is invalid:expected a string()
+   解决方案:此类问题可以是如下问题导致：
+	 	1：require和export default不能直接配对使用
+		2：标签大小写出错
+5：prop-types 已经从react中移除，需要单独安装
+
+6: 在初次使用react-navigation时 出现了两个头部导航 
+   原因：一个是StackNavigator的  一个是 TabNavigator
+   解决方案：隐藏一个喽  header：null
