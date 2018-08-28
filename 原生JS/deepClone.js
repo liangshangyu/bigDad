@@ -15,4 +15,21 @@ const cloneDeep = (obj) => {
         default:
             return Object.entries(obj).reduce( (acc, [key,value]) => Object.assign(acc, {[key]:cloneDeep((value))}),{})
     }
+};
+
+function deepCopy(p, c) {
+    var c = c || {};
+    for(var i in p){
+        if(typeof p[i] === 'object'){
+            c[i] = (p[i].constructor === Array) ? [] :{};
+            deepCopy(p[i], c[i])
+        }else {
+            c[i] = p[i]
+        }
+    }
+    return c
 }
+let obj = {a:1,b:3}
+let res =deepCopy(obj, {})
+console.log(res);
+console.log(res == obj);
