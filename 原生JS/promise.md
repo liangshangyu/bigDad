@@ -5,16 +5,12 @@ class Promise{
 		let resolve = () => {};
 
 		let reject = () => {}
-
 		executor(resolve,reject)
 	}
-
 }
-
-
 ```
 ### 解决基本状态
-1. Promis存在三个状态 (state) pending fulfilled  rejected
+1. Promise存在三个状态 (state) pending fulfilled  rejected
 2. pending(等待状态) 为初始态，并且可以转为fulfilled和 reject
 3. 成功时，不可以转为其他状态，且必须有一个不可改变的值（value）
 4. new Promise(() => {resolve(value)}) resolve成功，接受参数value，状态不可改变为fulfilled，不可再次改变

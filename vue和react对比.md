@@ -34,7 +34,7 @@ react强调的是数据的不可变，vue使用的是可变数据。
 2. Vue通过一种拓展的HTML语法进行渲染
 
 在深层上，模板原理不同
-1. React是在组件JS代码中通过原声JS实现模板中的常见语法，比如插值，条件，循环登
+1. React是在组件JS代码中通过原声JS实现模板中的常见语法，比如插值，条件，循环等
 2. Vue是在和组件JS代码分离的单独的模板中，通过指令来实现的
 
 react中render函数是支持闭包特性的，所以import的组件在render中可以直接调用
@@ -48,7 +48,7 @@ react中render函数是支持闭包特性的，所以import的组件在render中
 2. 通过mapState或者直接使用this.$store来读取数据
 
 在Redux中，每一个组件都需要显示用connect把需要的props和dispatch连接起来
-另外Vuex更加灵活一些，组件中既可以dispatch action也可以commit updayes，
+另外Vuex更加灵活一些，组件中既可以dispatch action也可以commit updates，
 而Redux只能进行dispatch不可以直接调用reducer进行修改
 
 从实现原理
