@@ -7,6 +7,7 @@
         body{
 
         }
+        /*--盒子水平居中 内容水平垂直居中*/
         .box1{
             width: 200px;
             height: 200px;
@@ -15,6 +16,7 @@
             text-align: center;
             line-height: 200px;
         }
+        /*多行*/
         .box2{
             width: 200px;
             height: 200px;
@@ -32,6 +34,72 @@
             display: table-cell;
             vertical-align:middle;
         }
+
+        /*宽高已知*/
+        .box3{
+            background-color: #2b542c;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        .content{
+            background-color: #5bc0de;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -50px 0 0 -50px;
+        }
+
+        /*宽高未知*/
+        .box4{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        .content2{
+            background-color: blue;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        /*flex布局*/
+        .box5{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content3{
+            background-color: #5bc0de;
+            width: 100px;
+            height: 100px;
+        }
+
+        /*table-cell布局s*/
+        .box6{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            display: table;
+        }
+        .content4{
+            background-color: #f00;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .inner{
+            background-color: black;
+            display: inline-block;
+            width: 20%;
+            height: 20%;
+        }
     </style>
 </head>
 <body>
@@ -40,5 +108,29 @@
 
     <!--多行-->
     <div class="box2"><p>合肥市等级划分个电话，黑色的粉红丝带虎飞虎，是的不就行</p></div>
+
+    <div class="box3">
+        <!--宽高已知-->
+        <div class="content"></div>
+    </div>
+
+    <div class="box4">
+        <!--元素宽高未知-->
+        <div class="content2">
+            fgfvdjkhgjdhf ghdfhgkjhdfg dfhgjfdh
+        </div>
+    </div>
+
+    <div class="box5">
+        <!--flex布局-->
+        <div class="content3"></div>
+    </div>
+
+    <div class="box6">
+        <!--table-cell布局 但是无法设置宽高，所以要嵌套一层-->
+        <div class="content4">
+            <div class="inner"></div>
+        </div>
+    </div>
 </body>
 </html>

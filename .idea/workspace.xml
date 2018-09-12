@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec34fce7-7bfa-4637-a1a3-ff7c810d438b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/ES6/let.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ES6/yield.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ajax/ajax.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/实现居中.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/优化/SW.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/优化/Service Worker.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/优化/WS生命周期.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/优化/浏览器页面资源加载过程及优化.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/原生JS/继承/new.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/原生JS/继承/原型链和继承.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/原生JS/继承/继承-原型链.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/css/实现居中.html" afterPath="$PROJECT_DIR$/css/实现居中.html" />
       <change beforePath="$PROJECT_DIR$/react/react-mobx-demo" afterPath="$PROJECT_DIR$/react/react-mobx-demo" />
-      <change beforePath="$PROJECT_DIR$/vue和react对比.md" afterPath="$PROJECT_DIR$/vue和react对比.md" />
-      <change beforePath="$PROJECT_DIR$/原生JS/promise.md" afterPath="$PROJECT_DIR$/原生JS/promise.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,107 +28,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="vue变化侦测原理.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/vue变化侦测原理.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="900">
-                <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-                <folding>
-                  <marker date="1532877541049" expanded="true" signature="150:407" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="185:404" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="256:284" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="313:400" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="341:371" ph="{...}" />
-                  <marker date="1532877541049" expanded="true" signature="498:562" ph="&lt;template/&gt;" />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="程序化的事件监听器.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/程序化的事件监听器.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="144">
-                <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-                <folding>
-                  <marker date="1530974352368" expanded="true" signature="59:67" ph="{...}" />
-                  <marker date="1530974352368" expanded="true" signature="110:138" ph="{...}" />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vue和react对比.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue和react对比.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="50" column="49" lean-forward="false" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aboutThis.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/原生JS/this指向/aboutThis.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2412">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BFC.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/BFC.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1887">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="双飞翼布局.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/双飞翼布局.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2161">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="实现居中.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="实现居中.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/实现居中.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+            <state relative-caret-position="36">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="适配.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/移动端/适配.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="108">
-                <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="继承-原型链.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/原生JS/继承/继承-原型链.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vw+rem布局.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/移动端/vw+rem布局.html">
+      <file leaf-file-name="原型链和继承.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/原生JS/继承/原型链和继承.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/原生JS/继承/new.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ES6/get.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -134,12 +80,91 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="yield.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/yield.js">
+      <file leaf-file-name="fundSpider.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeSpider/fundSpider.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3096">
-              <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+            <state relative-caret-position="396">
+              <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/Less/index.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-108">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="浏览器页面资源加载过程及优化.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/优化/浏览器页面资源加载过程及优化.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="99">
+                <caret line="85" column="51" lean-forward="false" selection-start-line="85" selection-start-column="51" selection-end-line="85" selection-end-column="51" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Service Worker.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/优化/Service Worker.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="108">
+                <caret line="39" column="3" lean-forward="false" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+                <folding>
+                  <marker date="1536739608612" expanded="true" signature="287:323" ph="..." />
+                  <marker date="1536739608612" expanded="true" signature="397:445" ph="..." />
+                  <marker date="1536739608612" expanded="true" signature="468:516" ph="..." />
+                  <marker date="1536739608612" expanded="true" signature="552:588" ph="..." />
+                  <marker date="1536739608612" expanded="true" signature="695:780" ph="{...}" />
+                  <marker date="1536739608612" expanded="true" signature="751:777" ph="{&quot;scope&quot;: './'...}" />
+                  <marker date="1536739608612" expanded="true" signature="957:1747" ph="{...}" />
+                  <marker date="1536739608612" expanded="true" signature="1001:1738" ph="{...}" />
+                  <marker date="1536739608612" expanded="true" signature="1051:1688" ph="{...}" />
+                  <marker date="1536739608612" expanded="true" signature="1277:1404" ph="{...}" />
+                  <marker date="1536739608612" expanded="true" signature="1535:1673" ph="{&quot;headers&quot;: headers...}" />
+                  <marker date="1536739608612" expanded="true" signature="1566:1655" ph="{&quot;content-type&quot;: 'text/html; charset=utf-8'...}" />
+                  <marker date="1536739608612" expanded="true" signature="2223:2623" ph="{...}" />
+                  <marker date="1536739608612" expanded="true" signature="2263:2618" ph="{...}" />
+                  <marker date="1536739608612" expanded="true" signature="2309:2576" ph="{...}" />
+                  <marker date="1536739608612" expanded="true" signature="2444:2565" ph="{...}" />
+                  <marker date="1536739608612" expanded="true" signature="2470:2551" ph="{&quot;content-type&quot;: 'text/css; charset= utf-8'...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SW.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/优化/SW.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1229">
+                <caret line="63" column="42" lean-forward="false" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+                <folding>
+                  <marker date="1536744096843" expanded="true" signature="576:736" ph="{...}" />
+                  <marker date="1536744096843" expanded="true" signature="656:733" ph="{...}" />
+                  <marker date="1536744096843" expanded="true" signature="839:910" ph="[...]" />
+                  <marker date="1536744096843" expanded="true" signature="986:1284" ph="{...}" />
+                  <marker date="1536744096843" expanded="true" signature="1062:1169" ph="{...}" />
+                  <marker date="1536744096843" expanded="true" signature="1186:1275" ph="{...}" />
+                  <marker date="1536744096843" expanded="true" signature="1376:1716" ph="{...}" />
+                  <marker date="1536744096843" expanded="true" signature="1452:1707" ph="{...}" />
+                  <marker date="1536744096843" expanded="true" signature="1487:1597" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -149,8 +174,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -166,6 +192,13 @@
         <option value="$PROJECT_DIR$/ES6/yield.js" />
         <option value="$PROJECT_DIR$/vue和react对比.md" />
         <option value="$PROJECT_DIR$/css/实现居中.html" />
+        <option value="$PROJECT_DIR$/优化/浏览器页面资源加载过程及优化.md" />
+        <option value="$PROJECT_DIR$/优化/Service Worker.md" />
+        <option value="$PROJECT_DIR$/优化/SW.md" />
+        <option value="$PROJECT_DIR$/原生JS/继承/继承-原型链.js" />
+        <option value="$PROJECT_DIR$/原生JS/继承/原型链和继承.css" />
+        <option value="$PROJECT_DIR$/原生JS/继承/原型链和继承.js" />
+        <option value="$PROJECT_DIR$/原生JS/继承/new.js" />
       </list>
     </option>
   </component>
@@ -181,11 +214,14 @@
     <handled-path value="$PROJECT_DIR$/react/react-mobx-demo/node_modules" />
     <handled-path value="$PROJECT_DIR$/移动端/vw-layout/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="231" />
-    <option name="y" value="26" />
-    <option name="width" value="1666" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="236" />
+    <option name="y" value="53" />
+    <option name="width" value="1534" />
     <option name="height" value="977" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -202,6 +238,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,57 +249,13 @@
             <path>
               <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
               <item name="bigDad" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bigDad" type="462c0819:PsiDirectoryNode" />
-              <item name="ES6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bigDad" type="462c0819:PsiDirectoryNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bigDad" type="462c0819:PsiDirectoryNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="指令" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bigDad" type="462c0819:PsiDirectoryNode" />
               <item name="原生JS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
               <item name="bigDad" type="462c0819:PsiDirectoryNode" />
               <item name="原生JS" type="462c0819:PsiDirectoryNode" />
-              <item name="Array_" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bigDad" type="462c0819:PsiDirectoryNode" />
-              <item name="原生JS" type="462c0819:PsiDirectoryNode" />
-              <item name="Object_" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bigDad" type="462c0819:PsiDirectoryNode" />
-              <item name="原生JS" type="462c0819:PsiDirectoryNode" />
-              <item name="String" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bigDad" type="462c0819:PsiDirectoryNode" />
-              <item name="原生JS" type="462c0819:PsiDirectoryNode" />
-              <item name="this指向" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bigDad" type="462c0819:PsiDirectoryNode" />
-              <item name="移动端" type="462c0819:PsiDirectoryNode" />
+              <item name="继承" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bigDad" type="b2602c69:ProjectViewProjectNode" />
@@ -274,13 +267,13 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -294,17 +287,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.yield.js">
+  <component name="RunManager" selected="Node.js.原型链和继承.js">
+    <configuration name="继承-原型链.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="继承-原型链.js" working-dir="$PROJECT_DIR$/原生JS/继承" />
+    <configuration name="原型链和继承.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="原型链和继承.js" working-dir="$PROJECT_DIR$/原生JS/继承" />
     <configuration name="let.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="let.js" working-dir="$PROJECT_DIR$/ES6" />
     <configuration name="yield.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="yield.js" working-dir="$PROJECT_DIR$/ES6" />
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Node.js.let.js" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.yield.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.继承-原型链.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.原型链和继承.js" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.yield.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.let.js" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.原型链和继承.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.继承-原型链.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.yield.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.let.js" />
       </list>
     </recent_temporary>
   </component>
@@ -326,17 +325,20 @@
       <workItem from="1535976242858" duration="2481000" />
       <workItem from="1536221565161" duration="3544000" />
       <workItem from="1536293157051" duration="1686000" />
+      <workItem from="1536402498324" duration="5907000" />
+      <workItem from="1536583100063" duration="1447000" />
+      <workItem from="1536665065331" duration="1643000" />
+      <workItem from="1536724377623" duration="20255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15883000" />
+    <option name="totallyTimeSpent" value="45135000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="231" y="26" width="1666" height="977" extended-state="1" />
-    <editor active="true" />
+    <frame x="236" y="53" width="1534" height="977" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1455774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11096257" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -366,98 +368,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ES6/Map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/vue变化侦测原理.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="900">
-            <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-            <folding>
-              <marker date="1532877541049" expanded="true" signature="150:407" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="185:404" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="256:284" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="313:400" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="341:371" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="498:562" ph="&lt;template/&gt;" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/程序化的事件监听器.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="144">
-            <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-            <folding>
-              <marker date="1530974352368" expanded="true" signature="59:67" ph="{...}" />
-              <marker date="1530974352368" expanded="true" signature="110:138" ph="{...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/原生JS/this指向/aboutThis.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/闭包/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/移动端/vw+rem布局.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/原生JS/promise.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-            <folding>
-              <marker date="1535782840469" expanded="true" signature="41:149" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="65:147" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="525:952" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="550:950" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="656:752" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="689:748" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="779:874" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="812:870" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="882:917" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="927:947" ph="{...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/移动端/适配.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="108">
             <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -467,7 +382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3096">
           <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -491,14 +405,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="900">
             <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-            <folding>
-              <marker date="1532877541049" expanded="true" signature="150:407" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="185:404" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="256:284" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="313:400" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="341:371" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="498:562" ph="&lt;template/&gt;" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -515,7 +421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -531,7 +436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -548,18 +452,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="180">
             <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-            <folding>
-              <marker date="1535782840469" expanded="true" signature="41:149" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="65:147" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="525:952" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="550:950" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="656:752" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="689:748" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="779:874" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="812:870" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="882:917" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="927:947" ph="{...}" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -570,7 +462,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="108">
             <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -580,7 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,14 +493,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="900">
             <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-            <folding>
-              <marker date="1532877541049" expanded="true" signature="150:407" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="185:404" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="256:284" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="313:400" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="341:371" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="498:562" ph="&lt;template/&gt;" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -634,7 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,7 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -659,18 +539,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="180">
             <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-            <folding>
-              <marker date="1535782840469" expanded="true" signature="41:149" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="65:147" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="525:952" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="550:950" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="656:752" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="689:748" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="779:874" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="812:870" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="882:917" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="927:947" ph="{...}" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -681,7 +549,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="108">
             <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -732,18 +599,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/get.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ES6/Map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,7 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,18 +618,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="180">
             <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-            <folding>
-              <marker date="1535782840469" expanded="true" signature="41:149" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="65:147" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="525:952" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="550:950" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="656:752" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="689:748" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="779:874" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="812:870" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="882:917" ph="{...}" />
-              <marker date="1535782840469" expanded="true" signature="927:947" ph="{...}" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -782,25 +628,15 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="108">
             <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-            <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/移动端/vw+rem布局.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ES6/yield.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3096">
-          <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
-          <folding />
+          <caret line="86" column="24" lean-forward="false" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -809,14 +645,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="900">
             <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-            <folding>
-              <marker date="1532877541049" expanded="true" signature="150:407" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="185:404" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="256:284" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="313:400" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="341:371" ph="{...}" />
-              <marker date="1532877541049" expanded="true" signature="498:562" ph="&lt;template/&gt;" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -836,17 +664,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue和react对比.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="50" column="49" lean-forward="false" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/原生JS/this指向/aboutThis.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2412">
+        <state relative-caret-position="288">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
@@ -854,7 +674,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/BFC.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1887">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -862,16 +682,156 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/双飞翼布局.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2161">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="828">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue和react对比.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="50" column="49" lean-forward="false" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/移动端/vw+rem布局.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/get.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeSpider/fundSpider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/Less/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/优化/浏览器页面资源加载过程及优化.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="99">
+            <caret line="85" column="51" lean-forward="false" selection-start-line="85" selection-start-column="51" selection-end-line="85" selection-end-column="51" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/优化/Service Worker.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="108">
+            <caret line="39" column="3" lean-forward="false" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+            <folding>
+              <marker date="1536739608612" expanded="true" signature="287:323" ph="..." />
+              <marker date="1536739608612" expanded="true" signature="397:445" ph="..." />
+              <marker date="1536739608612" expanded="true" signature="468:516" ph="..." />
+              <marker date="1536739608612" expanded="true" signature="552:588" ph="..." />
+              <marker date="1536739608612" expanded="true" signature="695:780" ph="{...}" />
+              <marker date="1536739608612" expanded="true" signature="751:777" ph="{&quot;scope&quot;: './'...}" />
+              <marker date="1536739608612" expanded="true" signature="957:1747" ph="{...}" />
+              <marker date="1536739608612" expanded="true" signature="1001:1738" ph="{...}" />
+              <marker date="1536739608612" expanded="true" signature="1051:1688" ph="{...}" />
+              <marker date="1536739608612" expanded="true" signature="1277:1404" ph="{...}" />
+              <marker date="1536739608612" expanded="true" signature="1535:1673" ph="{&quot;headers&quot;: headers...}" />
+              <marker date="1536739608612" expanded="true" signature="1566:1655" ph="{&quot;content-type&quot;: 'text/html; charset=utf-8'...}" />
+              <marker date="1536739608612" expanded="true" signature="2223:2623" ph="{...}" />
+              <marker date="1536739608612" expanded="true" signature="2263:2618" ph="{...}" />
+              <marker date="1536739608612" expanded="true" signature="2309:2576" ph="{...}" />
+              <marker date="1536739608612" expanded="true" signature="2444:2565" ph="{...}" />
+              <marker date="1536739608612" expanded="true" signature="2470:2551" ph="{&quot;content-type&quot;: 'text/css; charset= utf-8'...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/优化/WS生命周期.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/优化/SW.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1229">
+            <caret line="63" column="42" lean-forward="false" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+            <folding>
+              <marker date="1536744096843" expanded="true" signature="576:736" ph="{...}" />
+              <marker date="1536744096843" expanded="true" signature="656:733" ph="{...}" />
+              <marker date="1536744096843" expanded="true" signature="839:910" ph="[...]" />
+              <marker date="1536744096843" expanded="true" signature="986:1284" ph="{...}" />
+              <marker date="1536744096843" expanded="true" signature="1062:1169" ph="{...}" />
+              <marker date="1536744096843" expanded="true" signature="1186:1275" ph="{...}" />
+              <marker date="1536744096843" expanded="true" signature="1376:1716" ph="{...}" />
+              <marker date="1536744096843" expanded="true" signature="1452:1707" ph="{...}" />
+              <marker date="1536744096843" expanded="true" signature="1487:1597" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/实现居中.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        <state relative-caret-position="36">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/原生JS/继承/继承-原型链.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/原生JS/继承/原型链和继承.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/原生JS/继承/new.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding />
         </state>
       </provider>
