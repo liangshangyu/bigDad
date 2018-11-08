@@ -1,0 +1,406 @@
+<template>
+    <!--<div style="margin-left: 43%;margin-top: 16%">血缘关系图</div>-->
+  <div id="sample" style="margin-top: 20px">
+    <el-form style="margin-left: 10px" :inline="true" :model="formInline" class="demo-form-inline">
+      <el-form-item label="查询类型">
+        <el-select v-model="formInline.region" placeholder="请选择" @change="selectChange">
+          <el-option
+            v-for="item in typeListF"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value"
+          ></el-option>
+        </el-select>
+      </el-form-item>
+      <el-form-item label="目标">
+        <el-select v-model="valueOfTarget" filterable placeholder="请选择">
+          <el-option
+            v-for="item in targetListFinal"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value">
+          </el-option>
+        </el-select>
+      </el-form-item>
+
+      <el-form-item>
+        <el-input-number v-model="num1" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
+      </el-form-item>
+      <el-form-item>
+        <el-button type="primary" @click="onSubmit">查询</el-button>
+      </el-form-item>
+    </el-form>
+    <div id="myDiagramDiv" style="background-color: white; border: solid 1px black; height: 600px;margin-left: 10px;">
+    </div>
+    <div style=" margin-left: 10px;">
+      <div id="propertiesPanel" style="display: none; background-color: aliceblue; border: solid 1px black">
+        <b>Properties</b><br />
+        Name: <input type="text" id="name" value=""  readonly/><br />
+        Title: <input type="text" id="title" value=""  readonly/><br />
+        Comments: <input type="text" id="comments" value=""  readonly/><br />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { mapGetters } from 'vuex'
+import { getTypeList, getTargetList, search } from '@/api/bloodRe'
+export default {
+  data() {
+    return {
+      typeListF: [],
+      valueOfType: '',
+      targetListFinal: [],
+      valueOfTarget: '',
+      formInline: {
+        user: '',
+        region: ''
+      },
+      num1: 1,
+      list: [],
+      loading: false,
+      diagram: '',
+      first: true
+    }
+  },
+  name: 'index',
+  computed: {
+    ...mapGetters(['typeList', 'targetList', 'result'])
+  },
+  mounted() {
+    this.draw()
+    this.$store.dispatch('getListOfType').then(res => {
+      console.log(this.typeList)
+      this.typeList.forEach((item, index) => {
+        var row = {
+          label: item.queryType,
+          value: item.queryType
+        }
+        this.typeListF.push(row)
+      })
+    })
+  },
+  methods: {
+    onSelectionChanged(e) {
+      var node = e.diagram.selection.first()
+      if (node instanceof go.Node) {
+        this.updateProperties(node.data)
+      } else {
+        this.updateProperties(null)
+      }
+    },
+    updateProperties(data) {
+      if (data === null) {
+        document.getElementById('propertiesPanel').style.display = 'none'
+        document.getElementById('name').value = ''
+        document.getElementById('title').value = ''
+        document.getElementById('comments').value = ''
+      } else {
+        document.getElementById('propertiesPanel').style.display = 'block'
+        document.getElementById('name').value = data.name || ''
+        document.getElementById('title').value = data.title || ''
+        document.getElementById('comments').value = data.comments || ''
+      }
+    },
+    onTextEdited(e) {
+      var tb = e.subject
+      if (tb === null || !tb.name) return
+      var node = tb.part
+      if (node instanceof go.Node) {
+        // updateData(tb.text, tb.name)
+        this.updateProperties(node.data)
+      }
+    },
+    remoteMethod(query) {
+      if (query !== '') {
+        this.loading = true
+        setTimeout(() => {
+          this.loading = false
+          this.options4 = this.list.filter(item => {
+            return item.label.toLowerCase()
+              .indexOf(query.toLowerCase()) > -1
+          })
+        }, 200)
+      } else {
+        this.options4 = []
+      }
+    },
+    selectChange(value) {
+      this.valueOfTarget = ''
+      this.valueOfType = value
+      const param = {
+        queryType: value
+      }
+      this.$store.dispatch('getListOfTarget', param).then(res => {
+        this.targetListFinal = []
+        this.targetList.forEach((item, index) => {
+          const row = {
+            value: item,
+            label: item
+          }
+          this.targetListFinal.push(row)
+        })
+      })
+    },
+    selectChangeTarget(value) {
+      this.valueOfTarget = value
+    },
+    handleChange(value) {
+      console.log(value)
+    },
+    onSubmit() {
+      var param = {
+        pageSize: 1000,
+        currentPage: 1,
+        key: this.valueOfTarget,
+        maxLoops: this.num1,
+        queryType: this.valueOfType
+      }
+      this.$store.dispatch('doSearch', param).then(res => {
+        // this.draw()
+        var tempData = this.result.relationShips
+        var nodeDataArray = [{ key: this.valueOfTarget, name: this.valueOfTarget, title: 1 }]
+        tempData.forEach(function(item) {
+          var row = {
+            key: item.key,
+            name: item.key,
+            title: item.type
+          }
+          nodeDataArray.push(row)
+        })
+        var linkDataArray = []
+        tempData.forEach(function(item) {
+          if (item.relationship === '下游') {
+            for (var i = 0; i < item.path[0].length - 1; i++) {
+              for (var j = i + 1; j < item.path[0].length; j++) {
+                var row = {
+                  'from': item.path[0][i],
+                  'to': item.path[0][j],
+                  'category': 'Support'
+                }
+                linkDataArray.push(row)
+              }
+            }
+          } else {
+            for (var k = 0; k < item.path[0].length - 1; k++) {
+              for (var m = k + 1; m < item.path[0].length; m++) {
+                var row1 = {
+                  'from': item.path[0][m],
+                  'to': item.path[0][k],
+                  'category': 'Support'
+                }
+                linkDataArray.push(row1)
+              }
+            }
+          }
+        })
+        const ss = {
+          'class': 'go.GraphLinksModel',
+          'nodeDataArray': nodeDataArray,
+          'linkDataArray': linkDataArray
+        }
+        var s = JSON.stringify(ss)
+        this.myDiagram.model = go.TreeModel.fromJson(s)
+      })
+    },
+    draw() {
+      this.first = false
+      var self = this
+      var $ = go.GraphObject.make // for conciseness in defining templates
+      self.myDiagram =
+        $(go.Diagram, 'myDiagramDiv', // must be the ID or reference to div
+          {
+            initialContentAlignment: go.Spot.Center,
+            'toolManager.mouseWheelBehavior': go.ToolManager.WheelZoom, // 鼠标滚轮事件禁止
+            // make sure users can only create trees
+            validCycle: go.Diagram.CycleDestinationTree,
+            // users can select only one part at a time
+            maxSelectionCount: 1,
+            layout:
+              $(go.TreeLayout,
+                {
+                  treeStyle: go.TreeLayout.StyleLastParents,
+                  arrangement: go.TreeLayout.ArrangementHorizontal,
+                  // properties for most of the tree:
+                  angle: 90,
+                  layerSpacing: 35,
+                  // properties for the "last parents":
+                  alternateAngle: 0,
+                  alternateLayerSpacing: 35,
+                  alternateAlignment: go.TreeLayout.AlignmentStart,
+                  alternateNodeIndent: 10,
+                  alternateNodeIndentPastParent: 1.0,
+                  alternateNodeSpacing: 20,
+                  // alternateLayerSpacing: 30,
+                  alternateLayerSpacingParentOverlap: 1.0,
+                  alternatePortSpot: new go.Spot(0.01, 1, 10, 0),
+                  alternateChildPortSpot: go.Spot.Left,
+                  alignment: go.TreeLayout.AlignmentStart,
+                  portSpot: go.Spot.Bottom
+                }),
+            // support editing the properties of the selected person in HTML
+            'ChangedSelection': self.onSelectionChanged,
+            'TextEdited': self.onTextEdited,
+            // enable undo & redo
+            'undoManager.isEnabled': true
+          })
+      // when the document is modified, add a "*" to the title and enable the "Save" button
+      self.myDiagram.addDiagramListener('Modified', function(e) {
+        var button = document.getElementById('SaveButton')
+        if (button) button.disabled = !self.myDiagram.isModified
+        var idx = document.title.indexOf('*')
+        if (self.myDiagram.isModified) {
+          if (idx < 0) document.title += '*'
+        } else {
+          if (idx >= 0) document.title = document.title.substr(0, idx)
+        }
+      })
+      // var graygrad = $(go.Brush, 'Linear',
+      // { 0: 'rgb(125, 125, 125)', 0.5: 'rgb(86, 86, 86)', 1: 'rgb(86, 86, 86)' })
+      // when a node is double-clicked, add a child to it
+      /* function nodeDoubleClick(e, obj) {
+        var clicked = obj.part
+        if (clicked !== null) {
+          var thisemp = clicked.data
+          self.myDiagram.startTransaction('add employee')
+          var nextkey = (self.myDiagram.model.nodeDataArray.length + 1).toString()
+          var newemp = { key: nextkey, name: '(new person)', title: '' }
+          self.myDiagram.model.addNodeData(newemp)
+          self.myDiagram.model.addLinkData({ from: thisemp.key, to: nextkey })
+          self.myDiagram.commitTransaction('add employee')
+        }
+      } */
+      // this is used to determine feedback during drags
+      function mayWorkFor(node1, node2) {
+        if (!(node1 instanceof go.Node)) return false // must be a Node
+        if (node1 === node2) return false // cannot work for yourself
+        if (node2.isInTreeOf(node1)) return false // cannot work for someone who works for you
+        return true
+      }
+      // self.diagram = self.myDiagram
+      // This function provides a common style for most of the TextBlocks.
+      // Some of these values may be overridden in a particular TextBlock.
+      function textStyle() {
+        return { font: '9pt sans-serif', stroke: 'white' }
+      }
+      // define the Node template
+      self.myDiagram.nodeTemplate =
+        $(go.Node, 'Auto',
+          // { doubleClick: nodeDoubleClick },//新建一个节点
+          { // handle dragging a Node onto a Node to (maybe) change the reporting relationship
+            mouseDragEnter: function(e, node, prev) {
+              var diagram = node.diagram
+              var selnode = diagram.selection.first()
+              if (!mayWorkFor(selnode, node)) return
+              var shape = node.findObject('SHAPE')
+              // if (shape) shape.fill = "darkred";
+            },
+            mouseDragLeave: function(e, node, next) {
+              var shape = node.findObject('SHAPE')
+              // if (shape) shape.fill = graygrad;
+            },
+            mouseDrop: function(e, node) {
+              var diagram = node.diagram
+              var selnode = diagram.selection.first() // assume just one Node in selection
+              if (mayWorkFor(selnode, node)) {
+                // find any existing link into the selected node
+                var link = selnode.findTreeParentLink()
+                if (link !== null) { // reconnect any existing link
+                  // link.fromNode = node; 覆盖节点  形成新的
+                } else { // else create a new link
+                  // diagram.toolManager.linkingTool.insertLink(node, node.port, selnode, selnode.port);
+                }
+              }
+            }
+          },
+          // for sorting, have the Node.text be the data.name
+          new go.Binding('text', 'name'),
+          // bind the Part.layerName to control the Node's layer depending on whether it isSelected
+          new go.Binding('layerName', 'isSelected', function(sel) { return sel ? 'Foreground' : '' }).ofObject(),
+          // define the node's outer shape
+          $(go.Shape, 'RoundedRectangle',
+            {
+              name: 'SHAPE',
+              fill: '#38B0DE', stroke: 'black',
+              portId: '', fromLinkable: false, toLinkable: false, cursor: 'pointer'
+            }),
+          // define the panel where the text will appear
+          $(go.Panel, 'Table',
+            {
+              maxSize: new go.Size(150, 999),
+              margin: new go.Margin(3, 3, 0, 3),
+              defaultAlignment: go.Spot.Left
+            },
+            $(go.RowColumnDefinition, { column: 2, width: 4 }),
+            $(go.TextBlock, // the name
+              {
+                row: 0, column: 0, columnSpan: 5,
+                font: 'bold 9pt sans-serif',
+                editable: false, isMultiline: false,
+                stroke: 'white', minSize: new go.Size(10, 14)
+              },
+              new go.Binding('text', 'name').makeTwoWay()),
+            $(go.TextBlock, 'Title: ', textStyle(),
+              { row: 1, column: 0 }),
+            $(go.TextBlock, textStyle(),
+              {
+                row: 1, column: 1, columnSpan: 4,
+                editable: false, isMultiline: false,
+                minSize: new go.Size(10, 14),
+                margin: new go.Margin(0, 0, 0, 3)
+              },
+              new go.Binding('text', 'title').makeTwoWay()),
+            $(go.TextBlock, // the comments
+              {
+                row: 3, column: 0, columnSpan: 5,
+                font: 'italic 9pt sans-serif',
+                wrap: go.TextBlock.WrapFit,
+                editable: true, // by default newlines are allowed
+                stroke: 'white',
+                minSize: new go.Size(10, 14)
+              },
+              new go.Binding('text', 'comments').makeTwoWay()),
+            $('TreeExpanderButton',
+              { row: 4, columnSpan: 99, alignment: go.Spot.Center })
+          ) // end Table Panel
+        ) // end Node
+      // define the Link template
+      self.myDiagram.linkTemplate =
+        $(go.Link, go.Link.Orthogonal,
+          { corner: 5, relinkableFrom: true, relinkableTo: true },
+          $(go.Shape, { strokeWidth: 2 })) // the link shape
+      self.myDiagram.linkTemplateMap.add('Support',
+        $(go.Link, go.Link.Bezier,
+          { isLayoutPositioned: false, isTreeLink: false, curviness: -50 },
+          { relinkableFrom: true, relinkableTo: true },
+          $(go.Shape,
+            { stroke: 'green', strokeWidth: 2 }),
+          $(go.Shape,
+            { toArrow: 'OpenTriangle', stroke: 'green', strokeWidth: 2 }),
+          $(go.TextBlock,
+            new go.Binding('text', 'text'),
+            { stroke: 'green',
+              maxSize: new go.Size(80, NaN)
+            })))
+      self.myDiagram.linkTemplateMap.add('Motion',
+        $(go.Link, go.Link.Bezier,
+          { isLayoutPositioned: false, isTreeLink: false, curviness: -50 },
+          { relinkableFrom: true, relinkableTo: true },
+          $(go.Shape,
+            { stroke: 'red', strokeWidth: 2 }),
+          $(go.Shape,
+            { toArrow: 'OpenTriangle', stroke: 'red', strokeWidth: 2 }),
+          $(go.TextBlock,
+            new go.Binding('text', 'text'),
+            { stroke: 'orange',
+              maxSize: new go.Size(80, NaN)
+            })))
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+</style>
