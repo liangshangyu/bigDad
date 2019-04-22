@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #main{
+            width: 100%;
+
+        }
+        .thumb{
+            width: 33.3%;
+            height:550px;
+            float: left;
+        }
+        .loazd{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+     <article class="thumb">
+         <img class="loazd" data-src="image/1.jpg" data-index="1">
+         <noscript>
+             <img src="image/1.jpg" data-index="1" alt="">
+             <h2>Image 1</h2>
+         </noscript>
+     </article>
+        <article class="thumb">
+            <img class="loazd" data-src="image/2.jpg" data-index="2">
+            <noscript>
+                <img src="image/2.jpg" data-index="2" alt="">
+                <h2>Image 2</h2>
+            </noscript>
+        </article>
+        <article class="thumb">
+            <img class="loazd" data-src="image/3.jpg" data-index="3">
+            <noscript>
+                <img src="image/3.jpg" data-index="3" alt="">
+                <h2>Image 3</h2>
+            </noscript>
+        </article>
+        <article class="thumb">
+            <img class="loazd" data-src="image/4.jpg" data-index="4">
+            <noscript>
+                <img src="image/4.jpg" data-index="4" alt="">
+                <h2>Image 4</h2>
+            </noscript>
+        </article>
+        <article class="thumb">
+            <img class="loazd" data-src="image/5.jpg" data-index="5">
+            <noscript>
+                <img src="image/5.jpg" data-index="5" alt="">
+                <h2>Image 5</h2>
+            </noscript>
+        </article>
+        <article class="thumb">
+            <img class="loazd" data-src="image/6.jpg" data-index="6">
+            <noscript>
+                <img src="image/6.jpg" data-index="6" alt="">
+                <h2>Image 6</h2>
+            </noscript>
+        </article>
+        <article class="thumb">
+            <img class="loazd" data-src="image/7.jpg" data-index="7">
+            <noscript>
+                <img src="image/7.jpg" data-index="7" alt="">
+                <h2>Image 7</h2>
+            </noscript>
+        </article>
+        <article class="thumb">
+            <img class="loazd" data-src="image/8.jpg" data-index="8">
+            <noscript>
+                <img src="image/8.jpg" data-index="8" alt="">
+                <h2>Image 8</h2>
+            </noscript>
+        </article>
+        <article class="thumb">
+            <img class="loazd" data-src="image/9.jpg" data-index="9">
+            <noscript>
+                <img src="image/9.jpg" data-index="9" alt="">
+                <h2>Image 9</h2>
+            </noscript>
+        </article>
+        <article class="thumb">
+            <img class="loazd" data-src="image/10.jpg" data-index="10">
+            <noscript>
+                <img src="image/10.jpg" data-index="10" alt="">
+                <h2>Image 10</h2>
+            </noscript>
+        </article>
+        <article class="thumb">
+            <img class="loazd" data-src="image/11.jpg" data-index="11">
+            <noscript>
+                <img src="image/11.jpg" data-index="11" alt="">
+                <h2>Image 11</h2>
+            </noscript>
+        </article>
+        <article class="thumb">
+            <img class="loazd" data-src="image/12.jpg" data-index="12">
+            <noscript>
+                <img src="image/12.jpg" data-index="12" alt="">
+                <h2>Image 12</h2>
+            </noscript>
+        </article>
+
+    </div>
+</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/2.0.3/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<script src="loazd.js"></script>
+<script>
+    toastr.options = {
+        "progressBar":true,
+        "timeOut": '1500'
+    }
+    var observer = loazd('.loazd', {
+        threshold: 0.1,
+        load: function (el) {
+            el.src = el.getAttribute('data-src')
+            el.onload = function () {
+                toastr['success'](el.localName.toUpperCase() + " " + el.getAttribute('data-src') + " lazy loaded")
+            }
+        }
+    })
+    observer.observe()
+</script>

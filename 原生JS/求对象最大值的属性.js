@@ -12,6 +12,7 @@ for(var key in obj){
 console.log(keys);
 console.log(values);
 
-Object.entries({a:1,b:2,c:3}).reduce(
+let res = Object.entries({a:1,b:2,c:3}).reduce(
     ([accK,accV],[curK,curV]) => accV ? [accK,accV] : [curK,curV],[]
 )
+console.log(res);

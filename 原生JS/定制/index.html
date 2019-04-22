@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .module-panel > div.module{
+            text-align: center;
+            color: #eee;
+            position: absolute;
+        }
+        .module-panel > div.module.drag{
+
+        }
+        .module-panel > div > div
+    </style>
+</head>
+<body>
+    <div id="container" data-col="4">
+        <div style="background-color: #23a6D5" data-row="4">1</div>
+        <div style="background-color: #E73C7E" data-row="8">2</div>
+        <div style="background-color: #ee7752" data-row="4">3</div>
+        <div style="background-color: #7171C6" data-row="4">4</div>
+        <div style="background-color: #cccccc" data-row="4">5</div>
+        <div style="background-color: deepskyblue" data-row="6">6</div>
+        <div style="background-color: green" data-row="6">7</div>
+    </div>
+</body>
+</html>
+<script>
+    (function (global, factory) {
+        factory.call(global)
+    })(window, function () {
+        function customPage(el, option) {
+            this.__el__ = el =  typeof  el === 'string' ? document.getElementById(el) : el
+            this.__el__.className += " module-panel"
+            this.__masks__ = []
+            this.__modules__= this.__el__.children
+            this.layout()
+            this.__b__ = document.createElement("i")
+            this.__el__.appendChild(this.__b__)
+            this.handler()
+        }
+        customPage.prototype = {
+            layout: function () {
+                var __m__;
+                var __r__;
+                var __c__ = 100/(this.__el__.dataset.col);
+                var __t__ = 0
+                var __l__ = 0
+                console.log(__c__);
+                for(var i = 0;i<this.__modules__.length; i++) {
+                    __m__ = this.__modules__[i]
+                    __m__.className = 'module'
+                    __r__ = __m__.dataset.row //当前行的权重
+                    __m__.style.width = (__r__/12*100) + '%'
+                    __m__.style.height = __c__ + '%'
+                    __m__.style.left = __l__ + '%'
+                    __l__ += __r__/12 * 100
+                    __m__.style.top = __t__ + '%'
+                    __m__.appendChild(this.mask())
+                    if (Math.ceil(__l__) === 100) {
+                        __l__ = 0
+                        __t__ += __c__
+                    }
+
+
+                }
+            },
+            mask: function () {
+              var mask = document.createElement('div')
+               mask.className = 'mask'
+               this.__masks__.push(mask)
+               return mask
+            },
+            handler: function() {
+                var __that__ = this
+                var __mask__
+                this.__b__.onclick = function() {
+                    __that__.__state__ = __that__.__state__ ? 0 : 1
+                    if (__that__.__state__) {
+                        __that__.__el__.className += ' do-layout'
+                    }else {
+                        __that__.__el__.className = __that__.__el__.className.replace(' do-layout', '')
+                    }
+                }
+                var __move__,__target__
+                var __offset__ = {
+
+                }
+                for (var i =0;i<this.__masks__.length;i++) {
+                    __mask__ = this.__masks__[i]
+                    __mask__.onmousedown = function() {
+                        var __parent__ = __move__ =  this.parentNode
+                        __parent__.className += ' drag'
+                        __parent__.offset = {
+                            left: __parent__.style.left,
+                            top: __parent__.style.top
+                        }
+                        document.onmousemove = function (e) {
+                            __parent__.styl.left = e.pageX + 'px'
+                            __parent__.styl.top = e.pageY + 'px'
+
+                        }
+                        document.onmouseup = function() {
+                            __parent__.className = __parent__.className.replace(' drag', '')
+                            document.onmouseup = null
+                            if (__move__) {
+                                console.log(__move__, __target__)
+                                __parent__.style.left = __parent__.offset.left
+                                __parent__.style.top = __parent__.offset.top
+                                __move__ = __target__= null
+                            }
+                            document.onmousemove = null
+                        }
+                    }
+                    __mask__.onmouseenter = function() {
+                        if (__move__) {
+                            if(__move__.dataset.row === this.parentNode.dataset.row){
+                                __target__ = this.parentNode
+                                        var l = __target__.style.left
+                                        var t = __target__.style.top
+                                        __target__.style.left = __move__.offset.left
+                                        __target__.style.top = __move__.offset.top
+                                        __move__.offset.left = l
+                                        __move__.offset.top = t
+                                    }
+                            }
+                        }
+                }
+            }
+        }
+        this["customPage"] = customPage
+    })
+    new customPage("container", {})
+</script>

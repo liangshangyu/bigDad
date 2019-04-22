@@ -26,11 +26,26 @@
       <data-icons :option="easyDataOption2"></data-icons>
     </div>-->
     这是首页
+    <el-button @click="click">点击</el-button>
+    <el-input
+      placeholder="请输入内容"
+      prefix-icon="el-icon-search"
+      v-model="input"
+      @change="change"
+    >
+    </el-input>
+    <el-checkbox :indeterminate="isIndeterminate" v-model="checkAll" @change="handleCheckAllChange">全选</el-checkbox>
+    <div style="margin: 15px 0;"></div>
+    <el-checkbox-group v-model="checkedCities" @change="handleCheckedCitiesChange">
+      <el-checkbox v-for="city in cities" :label="city.cityCode" :key="city.cityCode">{{city.cityName}}</el-checkbox>
+    </el-checkbox-group>
   </div>
 </template>
 
 <script>
-
+const cityOptions = [{ cityName: '北京', cityCode: '4444' }, { cityName: '上海', cityCode: '55' },
+  { cityName: '南京', cityCode: '66' }, { cityName: '深圳', cityCode: '77' }, { cityName: '安徽', cityCode: '88' },
+  { cityName: '东方闪电', cityCode: '99' }, { cityName: '安徽的', cityCode: '210023' }]
 import DataDisplay from '@/components/data-display/data-display'
 import DataCard from '@/components/data-card/data-card'
 import DataTabs from '@/components/data-tabs/data-tabs'
@@ -203,13 +218,48 @@ export default {
             icon: 'icon-caidanguanli'
           }
         ]
-      }
+      },
+      checkAll: false,
+      checkedCities: ['上海', '北京'],
+      cities: cityOptions,
+      isIndeterminate: true,
+      input: ''
     }
   },
   created() {},
   watch: {},
   mounted() {},
-  computed: {}
+  computed: {},
+  methods: {
+    click() {
+      this.cities = [{ cityName: '北京', cityCode: '4444' }, { cityName: '上海', cityCode: '55' },
+        { cityName: '南京', cityCode: '66' }, { cityName: '深圳', cityCode: '77' }, { cityName: '安徽', cityCode: '88' },
+        { cityName: '东方闪电', cityCode: '99' }]
+    },
+    change(val) {
+      console.log(val)
+      if (val === '') {
+        this.cities = cityOptions
+      }
+      var arr = [], obj = {}
+      for (var i = 0; i < this.cities.length; i++) {
+        if (this.cities[i].cityName.indexOf(val) > -1) {
+          obj = this.cities[i]
+          arr.push(obj)
+        }
+      }
+      this.cities = arr
+    },
+    handleCheckAllChange(val) {
+      this.checkedCities = val ? cityOptions : []
+      this.isIndeterminate = false
+    },
+    handleCheckedCitiesChange(value) {
+      let checkedCount = value.length
+      this.checkAll = checkedCount === this.cities.length
+      this.isIndeterminate = checkedCount > 0 && checkedCount < this.cities.length
+    }
+  }
 }
 </script>
 

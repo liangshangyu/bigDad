@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div style="width:250px;height:250px">
+        <canvas id="pie" width="250px" height="250px"></canvas>
+    </div>
+    <div id="liquidfill-chart" style="width:250px; height:250px;position: absolute;top: 0;"></div>
+</body>
+</html>
+<script src="./js/echarts.js"></script>
+<script src="./js/echarts-liquidfill.js"></script>
+<script>
+    function init(percent, forecolor, bgcolor) {
+        let canvasElem = document.getElementById('pie')
+        drawMain(canvasElem, percent, forecolor, bgcolor)
+    }
+    /**
+     * @param canvasElem 绘制对象
+     * @param percent 绘制圆环百分比, 范围[0, 100]
+     * @param forecolor 绘制圆环的前景色
+     * @param bgcolor 绘制圆环的背景色
+     */
+
+    function drawMain(canvasElem, percent, forecolor, bgcolor) {
+        let context = canvasElem.getContext('2d')
+        let centerX = canvasElem.width / 2
+        let centerY = canvasElem.height / 2
+        let rad = Math.PI * 2 / 100
+        let speed = 0
+        let me = this
+
+        // 绘制背景圆圈
+        function backgroundCircle() {
+            context.save()
+            context.beginPath()
+            context.lineWidth = 10 // 设置线宽
+            let radius = centerX - context.lineWidth
+            context.lineCap = 'round'
+            context.strokeStyle = bgcolor
+            context.arc(centerX, centerY, radius, 0, Math.PI * 2, false)
+            context.stroke()
+            context.closePath()
+            context.restore()
+        }
+
+        // 绘制运动圆环
+        function foregroundCircle(n) {
+            context.save()
+            context.strokeStyle = forecolor
+            context.lineWidth = 10
+            context.lineCap = 'round'
+            let radius = centerX - context.lineWidth
+            context.beginPath()
+            context.arc(centerX, centerY, radius, -Math.PI / 2, -Math.PI / 2 + n * rad, false) // 用于绘制圆弧context.arc(x坐标，y坐标，半径，起始角度，终止角度，顺时针/逆时针)
+            context.stroke()
+            context.closePath()
+            context.restore()
+        }
+
+        // 执行动画
+        function drawFrame() {
+            window.requestAnimationFrame(drawFrame)
+            context.clearRect(0, 0, canvasElem.width, canvasElem.height)
+            backgroundCircle()
+            foregroundCircle(speed)
+            if (speed >= percent) return
+            speed += 1.5
+        }
+        window.requestAnimationFrame(drawFrame)
+    }
+    let percent = 30
+    let forecolor = '#FF83FA'
+    let bgcolor = '#F0F8FF'
+    window.onload = init(percent, forecolor, bgcolor)
+    var chart = echarts.init(document.getElementById('liquidfill-chart'));
+    var value = 0.025
+    var data = []
+    data.push(value)
+    data.push(value)
+    data.push(value)
+    data.push(value)
+    data.push(value)
+    /*var option = {
+        backgroundColor: '',
+        /!*title: {
+            text: 'CPU使用率',
+            textStyle: {
+                fontWeight: 'normal',
+                fontSize: 25,
+                color: 'rgb(97, 142, 205)'
+            }
+        },*!/
+        series: [{
+            type: 'liquidFill',
+            radius: '80%',
+            data: data,
+            backgroundStyle: {
+                //borderWidth: 5,
+                borderColor: 'white',
+                color: '#C6E2FF'
+            },
+            label: {
+                normal: {
+                    formatter: value * 100 + '%',
+                    textStyle: {
+                        fontSize: 50
+                    }
+                }
+            }
+        }]
+    }*/
+    var option = {
+        series: [{
+            type: 'liquidFill',
+            data: [0.6, 0.5, 0.4, 0.3],
+            color: [{
+                type: 'linear',
+                x: 0,
+                y: 0,
+                x2: 0,
+                y2: 1,
+                colorStops: [{ //填充区渐变色
+                    offset: 0,
+                    color: '#f898b3'
+                }, {
+                    offset: 0.2,
+                    color: '#fac8d3'
+                }, {
+                    offset: 1,
+                    color: '#ffffff'
+                }]
+            }],
+            radius: '80%',
+            shape: 'circle',
+            //center: ['25%', '25%'],
+            outline: {  // 控制外层边框吧
+                show: false,
+                borderDistance: 8,
+                itemStyle: {
+                    color: 'none',
+                    borderColor: '#294D99',
+                    borderWidth: 8,
+                    shadowBlur: 20,
+                    shadowColor: 'rgba(0, 0, 0, 0.25)'
+                }
+            },
+            itemStyle: {
+                opacity: 0.95,
+                shadowBlur: 50,
+                shadowColor: 'rgba(0, 0, 0, 0.4)'
+            },
+            label: {
+                normal: {
+                    textStyle: {
+                        color: 'red',          // 设置背景处的文字颜色
+                        insideColor: 'yellow', // 设置水波处的文字颜色
+                        fontSize: 14
+                    }
+                }
+            }
+        }]
+    };
+
+    chart.setOption(option);
+</script>

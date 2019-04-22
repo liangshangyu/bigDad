@@ -289,11 +289,7 @@ export default {
             var temp = []
             if (tempData.relationship === '上游') {
               if (tempData.loops === 1) {
-                var row = {
-                  key: tempData.path[0][1],
-                  parent: tempData.path[0][0],
-                  dir:
-                }
+                
               }
             }
             tempData.push({ key: this.formInline.searchTarget, shortKey: this.formInline.searchTarget.split(',')[this.formInline.searchTarget.split(',').length - 1] })
