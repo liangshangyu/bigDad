@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            border: 1px solid #23a6D5;
+        }
+        .word{
+            animation: fadeOut 1s infinite;
+        }
+        @keyframes fadeOut {
+            0% {
+                top:0;
+                opacity: 1;
+            }
+            100% {
+                top:10px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <span class="word">iloveyou</span>
+    </div>
+</body>
+</html>

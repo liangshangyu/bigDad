@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>moveUp</title>
+    <style>
+        ul,li{ margin:0; padding:0; }
+        li{ list-style:none; }
+        .container{ display:inline-block; background:#efefef; padding:10px; border:1px solid #ccc; font-family:"Microsoft YaHei"; }
+        .container .li-box{ height:28px; overflow:hidden; }
+        .container ul{ position:relative; animation: moveUp 8s 0.6s infinite; -webkit-animation: moveUp 8s 0.6s infinite; }
+        @keyframes moveUp
+        {
+            0% {top:0px;}
+            18% {top:0px;}
+            20% {top:-28px;}
+            38% {top:-28px;}
+            40% {top:-56px;}
+            58% {top:-56px;}
+            60% {top:-84px;}
+            78% {top:-84px;}
+            80% {top:-112px;}
+            98% {top:-112px;}
+        }</p> <p> @-webkit-keyframes moveUp /*Safari and Chrome*/
+                  {
+                      0% {top:0px;}
+                      18% {top:0px;}
+                      20% {top:-28px;}
+                      38% {top:-28px;}
+                      40% {top:-56px;}
+                      58% {top:-56px;}
+                      60% {top:-84px;}
+                      78% {top:-84px;}
+                      80% {top:-112px;}
+                      98% {top:-112px;}
+                  }
+        .container li{ line-height:1.8; color:#666; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="li-box">
+        <ul>
+            <li>飞鲨勇士张超：曾驾歼-8战机逼退外军侦察机</li>
+            <li>台媒炒作大陆军机飞临台海 台军方：全程监控</li>
+            <li>菲总统对华为何晴转阴：先期待“访华”后欲“清算中国”</li>
+            <li>外媒称韩国醉心中等强国地位 屡次在关涉中国时遇挫</li>
+            <li>伊朗官方回应日本驻伊大使被扣押：没有的事儿</li>
+            <li>菲总统对华为何晴转阴：先期待“访华”后欲“清算中国”</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

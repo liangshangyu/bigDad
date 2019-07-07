@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas Resize</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+
+            overflow: hidden;
+           
+        }
+        .wrap{
+            width: 750px;
+            height: 1000px;
+            background: url('./images/bg.png');
+            background-size: 100% 100%
+        }
+        .btn{
+            width: 136px;
+            height: 136px;
+            position: absolute;
+            left: 300px;
+            top: 369px;
+            background: url('./images/unBegin.png');
+            background-size: 100% 100%;
+            z-index: 99;
+        }
+        .canvasWrap{
+            position: absolute;
+            left: 28px;
+            top: 100px;
+            width: 680px;
+            height: 680px;
+            background: url('./images/disk.png');
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div id="spinBtn" class="btn"></div>
+        <div class="canvasWrap"> 
+            <canvas id="canvas"></canvas>
+        </div>
+        
+    </div>
+    <script src='./luckyDraw.js'></script>
+</body>
+</html>
