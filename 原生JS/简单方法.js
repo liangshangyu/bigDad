@@ -11,3 +11,5 @@ function foo2(o, arr) {
         return acc
     }, {})
 }
+
+const ROOT_DOMAIN = `.${document.domain.split('.').slice(-2).join('.')}` || '.haiziwang.com';
