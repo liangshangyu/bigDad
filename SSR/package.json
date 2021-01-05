@@ -28,7 +28,7 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "koa": "^2.5.1",
     "koa-router": "^7.4.0"
   }
